@@ -1,0 +1,15 @@
+[
+  { "id": "intro", "label": "১ ভূমিকা" },
+  { "id": "timeline", "label": "২ সাময়িক" },
+  { "id": "tradition", "label": "৩ ঐতিহ্য" },
+  { "id": "weather", "label": "৪ জলবায়ু" },
+  { "id": "tourism", "label": "৫ পর্যটন" },
+  { "id": "economy", "label": "৬ অর্থনীতি" },
+  { "id": "education", "label": "৭ শিক্ষা" },
+  { "id": "technology", "label": "৮ প্রযুক্তি" },
+  { "id": "politics", "label": "৯ রাজনীতি" },
+  { "id": "law", "label": "১০ আইন" },
+  { "id": "military", "label": "১১ সামরিক" },
+  { "id": "relations", "label": "১২ আন্তর্জাতিক" },
+  { "id": "civic", "label": "১৩ নাগরিক জীবন" }
+]

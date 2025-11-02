@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Open History - Global Template</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .card {
+      background: white;
+      border-radius: 1rem;
+      padding: 1rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .dark .card {
+      background: #1f2937;
+    }
+
+    /* Light mode styles */
+    body {
+      background-color: #f9fafb;
+      /* bg-gray-50 */
+      color: #1f2937;
+      /* text-gray-800 */
+      transition: all 0.3s ease;
+      /* transition duration-300 */
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background-color: #ffffff;
+      /* bg-white */
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+        0 2px 4px -2px rgba(0, 0, 0, 0.1);
+      /* shadow-md */
+    }
+
+    .topbar {
+      display: flex;
+      /* flex */
+      align-items: center;
+      /* items-center */
+      justify-content: space-between;
+      /* justify-between */
+      padding-left: 1.5rem;
+      /* px-6 → 24px */
+      padding-right: 1.5rem;
+      padding-top: 0.75rem;
+      /* py-3 → 12px */
+      padding-bottom: 0.75rem;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+      /* text-2xl → 24px */
+      font-weight: 700;
+      /* font-bold */
+    }
+
+    #countryName {
+      color: #2563eb;
+      /* text-blue-600 */
+    }
+
+    #languageSelect {
+      border: 1px solid #d1d5db;
+      /* border → default gray-300 */
+      border-radius: 0.375rem;
+      /* rounded-md → 6px */
+      padding-left: 0.5rem;
+      /* px-2 → 8px */
+      padding-right: 0.5rem;
+      padding-top: 0.25rem;
+      /* py-1 → 4px */
+      padding-bottom: 0.25rem;
+      font-size: 0.875rem;
+      /* text-sm → 14px */
+    }
+
+    #nightToggle {
+      padding: 0.5rem;
+      /* p-2 → 8px */
+      border-radius: 0.375rem;
+      /* rounded-md → 6px */
+      background-color: #e5e7eb;
+      /* bg-gray-200 */
+      transition: transform 0.2s ease;
+      /* transition → default duration */
+    }
+
+    #nightToggle:hover {
+      transform: scale(1.1);
+      /* hover:scale-110 */
+    }
+
+    nav {
+      overflow-x: auto;
+      /* overflow-x-auto → অনুভূমিক স্ক্রল */
+      background-color: #f3f4f6;
+      /* bg-gray-100 → হালকা ধূসর */
+      padding: 5px 5px;
+    }
+
+    ul {
+      display: flex;
+      /* flex → অনুভূমিকভাবে আইটেম সাজায় */
+      gap: 1rem;
+      /* gap-4 → 16px */
+      font-size: 15px;
+      /* text-sm → 14px */
+      font-weight: 500;
+      /* font-medium */
+    }
+
+    li a:hover {
+      color: #3b82f6;
+      /* Tailwind-এর blue-500 শেড */
+    }
+
+    /* Dark mode styles */
+    @media (prefers-color-scheme: dark) {
+      body {
+        background-color: #111827;
+        /* dark:bg-gray-900 */
+        color: #e5e7eb;
+        /* dark:text-gray-200 */
+      }
+
+      header {
+        background-color: #1f2937;
+        /* dark:bg-gray-800 */
+      }
+
+      #languageSelect {
+        background-color: #374151;
+        /* dark:bg-gray-700 */
+        color: #e5e7eb;
+        /* dark:text-gray-200 */
+      }
+
+      #nightToggle {
+        background-color: #374151;
+        /* dark:bg-gray-700 */
+      }
+
+      nav {
+        background-color: #374151;
+        /* dark:bg-gray-700 → গা dark ধূসর */
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 🔹 Header -->
+  <header>
+    <div class="topbar">
+      <h1>
+        Open Country:
+        <span id="countryName">[Country]</span>
+      </h1>
+      <div class="flex items-center gap-4">
+        <select id="languageSelect">
+          <option value="bn">বাংলা</option>
+          <option value="en">English</option>
+        </select>
+        <button id="nightToggle">🌙</button>
+      </div>
+    </div>
+    <!-- 🔹 Navigation -->
+    <nav>
+      <ul>
+        <li><a href="#intro">ভূমিকা</a></li>
+        <li>
+          <a href="#timeline">সময়ভিত্তিক</a>
+        </li>
+        <li><a href="#culture">সংস্কৃতি</a></li>
+        <li><a href="#heritage">ঐতিহ্য</a></li>
+        <li><a href="#politics">রাজনীতি</a></li>
+        <li><a href="#economy">অর্থনীতি</a></li>
+        <li><a href="#education">শিক্ষা</a></li>
+        <li><a href="#technology">বিজ্ঞান</a></li>
+        <li><a href="#weather">জলবায়ু</a></li>
+        <li><a href="#relations">আন্তর্জাতিক</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- 🔹 Main Content -->
+  <main id="mainContent" class="p-6 space-y-10 max-w-6xl mx-auto">
+    <!-- ভূমিকা -->
+    <section class="chapter" id="intro" data-era="foundation">
+      <h2 class="text-xl font-semibold mb-4">ভূমিকা</h2>
+      <div class="grid md:grid-cols-2 gap-4">
+        <article class="p-4 rounded-xl shadow bg-white dark:bg-gray-800">
+          <h3 class="font-bold">দেশের সংক্ষিপ্ত পরিচিতি</h3>
+          <p>দেশের ভূগোল, জনসংখ্যা, ভাষা</p>
+        </article>
+        <article class="p-4 rounded-xl shadow bg-white dark:bg-gray-800">
+          <h3 class="font-bold">ভূগোল, জনসংখ্যা, ভাষা</h3>
+          <p></p>
+        </article>
+        <article class="p-4 rounded-xl shadow bg-white dark:bg-gray-800">
+          <h3 class="font-bold">ইতিহাসের গুরুত্ব ও উদ্দেশ্য</h3>
+          <p></p>
+        </article>
+      </div>
+    </section>
+
+    <!-- সময় ভিত্তিক বিভাগ -->
+    <section class="chapter" id="timeline">
+      <h2 class="text-xl font-semibold mb-4">সময় ভিত্তিক বিভাগ</h2>
+      <div class="grid md:grid-cols-2 gap-4">
+        <article class="card">
+          <h3>প্রাচীন যুগ</h3>
+          <p>আদিম জনগোষ্ঠী, সভ্যতার সূচনা, প্রত্নতাত্ত্বিক নিদর্শন</p>
+        </article>
+        <article class="card">
+          <h3>মধ্যযুগ</h3>
+          <p>রাজত্ব, সাম্রাজ্য, ধর্মীয় প্রভাব, যুদ্ধ</p>
+        </article>
+        <article class="card">
+          <h3>ঔপনিবেশিক যুগ</h3>
+          <p>বিদেশি শাসন, প্রতিরোধ আন্দোলন, অর্থনৈতিক পরিবর্তন</p>
+        </article>
+        <article class="card">
+          <h3>স্বাধীনতা আন্দোলন</h3>
+          <p>নেতৃবৃন্দ, আন্দোলনের ধারা</p>
+        </article>
+        <article class="card">
+          <h3>আধুনিক যুগ</h3>
+          <p>সংবিধান, নির্বাচন, প্রযুক্তি ও উন্নয়ন</p>
+        </article>
+        <article class="card">
+          <h3>বর্তমান যুগ</h3>
+          <p>রাজনৈতিক স্থিতিশীলতা, অর্থনৈতিক উন্নয়ন, সামাজিক পরিবর্তন</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- সামাজিক ও সাংস্কৃতিক বৈচিত্র্য -->
+    <section class="chapter" id="culture">
+      <h2 class="text-xl font-semibold mb-4">
+        সামাজিক ও সাংস্কৃতিক বৈচিত্র্য
+      </h2>
+      <div class="grid md:grid-cols-2 gap-4">
+        <article class="card">
+          <h3>জাতিগোষ্ঠী ও ভাষা</h3>
+        </article>
+        <article class="card">
+          <h3>ধর্ম ও আচার</h3>
+        </article>
+        <article class="card">
+          <h3>শিল্প ও সাহিত্য</h3>
+        </article>
+        <article class="card">
+          <h3>খাদ্য ও পোশাক</h3>
+        </article>
+      </div>
+    </section>
+
+    <!-- ঐতিহ্য -->
+    <section class="chapter" id="heritage">
+      <h2 class="text-xl font-semibold mb-4">ঐতিহ্য ও স্থাপত্য</h2>
+      <div class="grid md:grid-cols-2 gap-4">
+        <article class="card">
+          <h3>ঐতিহাসিক স্থাপত্য</h3>
+        </article>
+        <article class="card">
+          <h3>বিশ্ব ঐতিহ্যের স্থান</h3>
+        </article>
+        <article class="card">
+          <h3>পর্যটন শিল্প</h3>
+        </article>
+      </div>
+    </section>
+
+    <!-- রাজনীতি -->
+    <section class="chapter" id="politics">
+      <h2 class="text-xl font-semibold mb-4">রাজনৈতিক ইতিহাস</h2>
+      <div class="grid md:grid-cols-2 gap-4">
+        <article class="card">
+          <h3>রাজনৈতিক দল ও আন্দোলন</h3>
+        </article>
+        <article class="card">
+          <h3>নেতৃত্ব ও সরকার পরিবর্তন</h3>
+        </article>
+        <article class="card">
+          <h3>সংবিধান ও আইন</h3>
+        </article>
+        <article class="card">
+          <h3>সামরিক অভ্যুত্থান / জরুরি অবস্থা</h3>
+        </article>
+      </div>
+    </section>
+
+    <!-- অর্থনীতি -->
+    <section class="chapter" id="economy">
+      <h2 class="text-xl font-semibold mb-4">অর্থনৈতিক পরিবর্তন</h2>
+      <div class="grid md:grid-cols-2 gap-4">
+        <article class="card">
+          <h3>কৃষি ও ভূমি সংস্কার</h3>
+        </article>
+        <article class="card">
+          <h3>শিল্প ও বাণিজ্য</h3>
+        </article>
+        <article class="card">
+          <h3>পরিষেবা খাত</h3>
+        </article>
+        <article class="card">
+          <h3>বৈদেশিক বিনিয়োগ ও বাণিজ্য</h3>
+        </article>
+      </div>
+    </section>
+
+    <!-- শিক্ষা -->
+    <section class="chapter" id="education">
+      <h2 class="text-xl font-semibold mb-4">শিক্ষা ও গবেষণা</h2>
+      <div class="grid md:grid-cols-2 gap-4">
+        <article class="card">
+          <h3>বিজ্ঞানী ও গবেষক</h3>
+        </article>
+        <article class="card">
+          <h3>বিশ্ববিদ্যালয় ও শিক্ষা আন্দোলন</h3>
+        </article>
+        <article class="card">
+          <h3>গবেষণা প্রতিষ্ঠান</h3>
+        </article>
+        <article class="card">
+          <h3>শিক্ষাগত উদ্ভাবন</h3>
+        </article>
+      </div>
+    </section>
+
+    <!-- বিজ্ঞান -->
+    <section class="chapter" id="technology">
+      <h2 class="text-xl font-semibold mb-4">বিজ্ঞান ও প্রযুক্তি</h2>
+      <div class="grid md:grid-cols-2 gap-4">
+        <article class="card">
+          <h3>প্রযুক্তির আগমন</h3>
+        </article>
+        <article class="card">
+          <h3>ডিজিটাল রূপান্তর</h3>
+        </article>
+        <article class="card">
+          <h3>বৈশ্বিক অংশগ্রহণ</h3>
+        </article>
+      </div>
+    </section>
+
+    <!-- জলবায়ু -->
+    <section class="chapter" id="weather">
+      <h2 class="text-xl font-semibold mb-4">দুর্যোগ ও জলবায়ু পরিবর্তন</h2>
+      <div class="grid md:grid-cols-2 gap-4">
+        <article class="card">
+          <h3>জলবায়ু পরিবর্তন</h3>
+        </article>
+        <article class="card">
+          <h3>প্রাকৃতিক দুর্যোগ</h3>
+        </article>
+        <article class="card">
+          <h3>মানবসৃষ্ট সংকট</h3>
+        </article>
+        <article class="card">
+          <h3>দুর্যোগ ব্যবস্থাপনা</h3>
+        </article>
+        <article class="card">
+          <h3>পুনর্গঠন ও পুনর্বাসন</h3>
+        </article>
+      </div>
+    </section>
+
+    <!-- আন্তর্জাতিক সম্পর্ক -->
+    <section class="chapter" id="relations">
+      <h2 class="text-xl font-semibold mb-4">আন্তর্জাতিক সম্পর্ক</h2>
+      <div class="grid md:grid-cols-2 gap-4">
+        <article class="card">
+          <h3>প্রতিবেশী দেশগুলোর সঙ্গে সম্পর্ক</h3>
+        </article>
+        <article class="card">
+          <h3>বৈশ্বিক সহযোগিতা</h3>
+        </article>
+        <article class="card">
+          <h3>আন্তর্জাতিক সংস্থা</h3>
+        </article>
+        <article class="card">
+          <h3>বৈদেশিক নীতি</h3>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- 🔹 Footer -->
+  <footer class="bg-gray-200 dark:bg-gray-800 text-center py-4 mt-10">
+    <p class="text-sm">
+      🌍 Open History Framework © 2025 — Built for all nations
+    </p>
+  </footer>
+
+  <!-- 🔹 Script -->
+  <script>
+    // Country Name Setup
+    const countryName = localStorage.getItem("countryName") || "Bangladesh";
+    document.getElementById("countryName").textContent = countryName;
+
+    // Theme Toggle
+    const nightToggle = document.getElementById("nightToggle");
+    nightToggle.addEventListener("click", () => {
+      document.body.classList.toggle("dark");
+    });
+  </script>
+
+</body>
+
+</html>

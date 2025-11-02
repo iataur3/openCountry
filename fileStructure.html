@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <pre>
+  opencountry/
+  ├─ public/ # Static frontend
+  │ ├─ index.html # Main page
+  │ ├─ afghanistan.html
+  │ └─ assets/
+  │   ├─ json/
+  │   │ ├─ chapterNav.json
+  │   │ ├─ countries.json
+  │   │ ├─ footerContent.json
+  │   │ ├─ popupContent.json
+  │   │ └─ 
+  │   ├─ js/
+  │   │ ├─ body.js
+  │   │ ├─ searchBar.js
+  │   │ ├─ sidebar.js
+  │   │ ├─ rating.js
+  │   │ ├─ topbar.js
+  │   │ ├─ translate.js
+  │   │ └─ viewCount.js
+  │   └─ css/
+  │     └─ style.css
+  │
+  ├─ functions/ # Firebase Cloud Functions (Node.js backend)
+  │ ├─ index.js # Main function file
+  │ ├─ data/
+  │ │ └─ viewCount.json
+  │ ├─ package.json # Backend dependencies
+  │ └─ utils/
+  │   └─ firestore.js # Firestore read/write helpers
+  │
+  ├── firebase.json # Firebase config
+  ├── .firebaserc # Project alias
+  └── README.md # Project overview
+</pre>
+</body>
+
+</html>

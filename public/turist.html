@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Turist</title>
+  <link rel="stylesheet" href="./assets/css/indexRoot.css" />
+</head>
+
+<body>
+  <!-- ✅ Topbar -->
+  <header class="topbar" id="topbar">
+    <div class="topbar-left">
+      <a href="#" id="homeToggle" title="Home Button">🏠</a>
+    </div>
+    <div class="topbar-right">
+      <button id="aboutBtn">About</button>
+      <input type="text" placeholder="🔎Search..." class="search-box" id="searchInput" title="Search Box" />
+      <div id="languageDropdown"></div>
+      <div id="searchResults"></div>
+      <button id="nightBtn" class="night-mode" title="Night Mode">🌙</button>
+      <button id="languageButton" title="Select Language">🌐</button>
+    </div>
+  </header>
+
+  <!-- ✅ Sidebar -->
+  <nav class="sidebar" id="sidebar">
+    <ul class="sidebar-list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="bangladesh.html">Bangladesh</a></li>
+      <li><a href="us.html">U.S.</a></li>
+      <li><a href="rusia.html" class="add-chapter">Rusia</a></li>
+      <li><a href="chin.html">China</a></li>
+      <li><a href="koria.html" class="public-report">Koria</a></li>
+    </ul>
+  </nav>
+
+  <div class="main-layout">
+    <!-- ✅ Main Content -->
+    <div class="main-content" id="mainContent">
+      <div id="languageDropdown"></div>
+      <div id="searchResults"></div>
+      <h1>Open Turist</h1>
+      <section class="chapter" id="intro">
+        <h2>Introduction</h2>
+        <article class="article card">
+          <h3>Mangrove Forests</h3>
+          <p></p>
+        </article>
+        <article class="article card">
+          <h3>Pahar Puri</h3>
+          <p></p>
+        </article>
+        <article class="article card">
+          <h3>Coxs Bazar</h3>
+          <p></p>
+        </article>
+      </section>
+      <section class="chapter" id="timeline">
+        <h2>সময় ভিত্তিক বিভাগ</h2>
+        <article class="article card">
+          <h3>প্রাচীন যুগ</h3>
+          <p>আদিম জনগোষ্ঠী, সভ্যতার সূচনা, প্রত্নতাত্ত্বিক নিদর্শন</p>
+        </article>
+        <article class="article card">
+          <h3>মধ্যযুগ</h3>
+          <p>রাজত্ব, সাম্রাজ্য, ধর্মীয় প্রভাব, যুদ্ধ</p>
+        </article>
+        <article class="article card">
+          <h3>ঔপনিবেশিক যুগ</h3>
+          <p>বিদেশি শাসন, প্রতিরোধ আন্দোলন, অর্থনৈতিক পরিবর্তন</p>
+        </article>
+        <article class="article card">
+          <h3>স্বাধীনতা আন্দোলন:</h3>
+          <p>নেতৃবৃন্দ, আন্দোলনের ধারা</p>
+        </article>
+        <article class="article card">
+          <h3>আধুনিক যুগ</h3>
+          <p>সংবিধান, নির্বাচন, প্রযুক্তি ও উন্নয়ন</p>
+        </article>
+        <article class="article card">
+          <h3>বর্তমান যুগ</h3>
+          <p>রাজনৈতিক স্থিতিশীলতা, অর্থনৈতিক উন্নয়ন, সামাজিক পরিবর্তন</p>
+        </article>
+      </section>
+      <section class="chapter" id="culture">
+        <h2>সামাজিক ও সাংস্কৃতিক বৈচিত্র্য</h2>
+        <article class="article card">
+          <h3>জাতিগোষ্ঠী ও ভাষা</h3>
+          <p>আদিবাসী, স্থানীয় ভাষা, ভাষা আন্দোলন</p>
+        </article>
+        <article class="article card">
+          <h3>ধর্ম ও আচার</h3>
+          <p>প্রধান ধর্ম, ধর্মীয় উৎসব, ধর্মীয় সংঘাত বা সংহতি</p>
+        </article>
+        <article class="article card">
+          <h3>শিল্প ও সাহিত্য</h3>
+          <p>কবিতা, গান, নাটক, চিত্রকলা</p>
+        </article>
+        <article class="article card">
+          <h3>খাদ্য ও পোশাক:</h3>
+          <p>ঐতিহ্যবাহী খাবার, পোশাকের বিবর্তন</p>
+        </article>
+      </section>
+      <section class="chapter" id="heritage">
+        <h2>ঐতিহ্য, স্থাপত্য ও পর্যটন</h2>
+        <article class="article card">
+          <h3>ঐতিহাসিক স্থাপত্য</h3>
+          <p></p>
+        </article>
+        <article class="article card">
+          <h3>বিশ্ব ঐতিহ্যের স্থান</h3>
+          <p></p>
+        </article>
+        <article class="article card">
+          <h3>পর্যটন শিল্প</h3>
+          <p></p>
+        </article>
+      </section>
+      <section class="chapter" id="politics">
+        <h2>রাজনৈতিক ইতিহাস</h2>
+        <article class="article card">
+          <h3>রাজনৈতিক দল ও আন্দোলন</h3>
+          <p></p>
+        </article>
+        <article class="article card">
+          <h3>নেতৃত্ব ও সরকার পরিবর্তন</h3>
+          <p></p>
+        </article>
+        <article class="article card">
+          <h3>সংবিধান ও আইন</h3>
+          <p></p>
+        </article>
+        <article class="article card">
+          <h3>সামরিক অভ্যুত্থান / জরুরি অবস্থা</h3>
+          <p></p>
+        </article>
+      </section>
+      <section class="chapter" id="economy">
+        <h2>অর্থনৈতিক পরিবর্তন</h2>
+        <article class="article card">
+          <h3>কৃষি ও ভূমি সংস্কার</h3>
+          <p></p>
+        </article>
+        <article class="article card">
+          <h3>শিল্প ও বাণিজ্য</h3>
+          <p></p>
+        </article>
+        <article class="article card">
+          <h3>পরিষেবা খাত</h3>
+          <p></p>
+        </article>
+        <article class="article card">
+          <h3>বৈদেশিক বিনিয়োগ ও বাণিজ্য</h3>
+          <p></p>
+        </article>
+      </section>
+      <section class="chapter" id="education">
+        <h2>শিক্ষাগত ও গবেষণা</h2>
+        <article class="article card">
+          <h3>বিজ্ঞানী ও গবেষক</h3>
+          <p></p>
+        </article>
+        <article class="article card">
+          <h3>বিশ্ববিদ্যালয় ও শিক্ষা আন্দোলন</h3>
+          <p></p>
+        </article>
+        <article class="article card">
+          <h3>গবেষণা প্রতিষ্ঠান ও উদ্যোগ</h3>
+          <p></p>
+        </article>
+        <article class="article card">
+          <h3>শিক্ষাগত গবেষণা</h3>
+          <p></p>
+        </article>
+      </section>
+      <section class="chapter" id="technology">
+        <h2>বিজ্ঞান ও উদ্ভাবন</h2>
+        <article class="article card">
+          <h3>প্রযুক্তির আগমন</h3>
+          <p></p>
+        </article>
+        <article class="article card">
+          <h3>ডিজিটাল রূপান্তর</h3>
+          <p></p>
+        </article>
+        <article class="article card">
+          <h3>বৈশ্বিক অংশগ্রহণ</h3>
+          <p></p>
+        </article>
+      </section>
+      <section class="chapter" id="weather">
+        <h2>দুর্যোগ ও জলবায়ু পরিবর্তন</h2>
+        <article class="article card">
+          <h3>জলবায়ু পরিবর্তন</h3>
+          <p></p>
+        </article>
+        <article class="article card">
+          <h3>মানবসৃষ্ট সংকট</h3>
+          <p></p>
+        </article>
+        <article class="article card">
+          <h3>প্রাকৃতিক দুর্যোগ</h3>
+          <p></p>
+        </article>
+        <article class="article card">
+          <h3>দুর্যোগ ব্যবস্থাপনা</h3>
+          <p></p>
+        </article>
+        <article class="article card">
+          <h3>দুর্যোগের প্রভাব</h3>
+          <p></p>
+        </article>
+        <article class="article card">
+          <h3>পুনর্গঠন ও পুনর্বাসন</h3>
+          <p></p>
+        </article>
+      </section>
+      <section class="chapter" id="relations">
+        <h2>আন্তর্জাতিক সম্পর্ক</h2>
+        <article class="article card">
+          <h3>প্রতিবেশী দেশগুলোর সঙ্গে সম্পর্ক</h3>
+          <p></p>
+        </article>
+        <article class="article card">
+          <h3>বৈশ্বিক সহযোগিতা</h3>
+          <p></p>
+        </article>
+        <article class="article card">
+          <h3>আন্তর্জাতিক সংস্থা</h3>
+          <p></p>
+        </article>
+        <article class="article card">
+          <h3>বৈদেশিক নীতি</h3>
+          <p></p>
+        </article>
+      </section>
+    </div>
+    <aside class="chapter-nav-sidebar" id="chapterNavSidebar">
+      <h3>অধ্যায়</h3>
+      <ul class="chapter-nav-sidebar-ul" id="chapterNavList"></ul>
+    </aside>
+  </div>
+  <!-- 🪟 Popup Modal -->
+  <div id="popupSection" class="popup hidden">
+    <div class="popup-content">
+      <span class="close-btn" id="closePopup">&times;</span>
+      <h2 id="popupTitle"></h2>
+      <p id="popupContent"></p>
+    </div>
+  </div>
+
+  <!-- ✅ Footer -->
+  <footer id="dynamicFooter"></footer>
+  <script src="assets/js/topbar.js"></script>
+  <script src="assets/js/searchBar.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0"></script>
+  <script src="assets/js/translate.js"></script>
+  <script src="assets/js/sidebar.js"></script>
+  <script src="assets/js/body.js"></script>
+  <script src="assets/js/viewCount.js"></script>
+  <script src="assets/js/rating.js"></script>
+
+
+</body>
+
+</html>

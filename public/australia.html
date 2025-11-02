@@ -1,0 +1,1129 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Australia</title>
+  <link rel="stylesheet" href="./assets/css/indexRoot.css" />
+</head>
+
+<body>
+  <!-- ✅ Topbar -->
+  <header class="topbar" id="topbar">
+    <div class="topbar-left">
+      <a href="#" id="homeToggle" title="Home Button">🏠</a>
+    </div>
+    <span class="topbar-title">Open Country</span>
+    <div class="topbar-right">
+      <input id="searchInput" type="text" placeholder="🔎Search..." class="search-box" title="Search Box" />
+      <button id="uxBtn" title="User Experience">UX</button>
+      <button id="aboutBtn">About</button>
+      <button id="nightBtn" class="night-mode" title="Night Mode">🌙</button>
+      <button id="languageButton" title="Select Language">🌐</button>
+      <div id="languageDropdown"></div>
+    </div>
+  </header>
+  <!-- ✅ Sidebar -->
+  <nav class="sidebar" id="sidebar">
+    <ul id="country-list" class="sidebar-list"></ul>
+  </nav>
+  <div class="main-layout">
+    <!-- ✅ Main Content -->
+    <div class="main-content" id="mainContent">
+      <h1>Open Country: Australia</h1>
+      <div id="searchResults"></div>
+      <section class="chapter" id="intro">
+        <h2>📘 অধ্যায় ১: ভূমিকা</h2>
+
+        <article class="article card" id="au1-1">
+          <h3>১.১: ইতিহাস অধ্যয়নের প্রয়োজনীয়তা</h3>
+          <p>
+            ইতিহাস অধ্যয়ন আমাদের অতীতকে বুঝতে সাহায্য করে, যা বর্তমানের সিদ্ধান্ত ও ভবিষ্যতের পরিকল্পনায় গুরুত্বপূর্ণ
+            ভূমিকা
+            রাখে। Australia-এর ইতিহাস আদিবাসী সংস্কৃতি, ঔপনিবেশিকতা, গণতন্ত্র ও বহুজাতিক সমাজের বিকাশকে বোঝার জন্য
+            অপরিহার্য।
+          </p>
+          <ul>
+            <li>অতীতের ঘটনা ও পরিবর্তনের ধারাকে বিশ্লেষণ করতে সহায়তা করে।</li>
+            <li>জাতির পরিচয়, সংগ্রাম ও ঐতিহ্য গঠনে ইতিহাস গুরুত্বপূর্ণ।</li>
+            <li>ভবিষ্যতের জন্য শিক্ষণীয় দিকনির্দেশনা প্রদান করে।</li>
+          </ul>
+        </article>
+
+        <article class="article card" id="au1-2">
+          <h3>১.২: দেশের পরিচিতি ও অবস্থান</h3>
+          <p>
+            Australia দক্ষিণ গোলার্ধে অবস্থিত একটি মহাদেশীয় দেশ, যার রাজধানী Canberra। এটি ভারত মহাসাগর ও প্রশান্ত
+            মহাসাগরের
+            মাঝে অবস্থিত এবং এর ছয়টি রাজ্য ও দুটি অঞ্চল রয়েছে।
+          </p>
+          <ul>
+            <li>অবস্থান: দক্ষিণ গোলার্ধ, ভারত ও প্রশান্ত মহাসাগরের মাঝে।</li>
+            <li>রাজধানী: Canberra।</li>
+            <li>রাজ্য ও অঞ্চল: New South Wales, Victoria, Queensland, Western Australia, South Australia, Tasmania,
+              Northern
+              Territory, Australian Capital Territory।</li>
+          </ul>
+        </article>
+
+        <article class="article card" id="au1-3">
+          <h3>১.৩: ভৌগোলিক বৈশিষ্ট্য</h3>
+          <p>
+            Australia একটি বিশাল ও বৈচিত্র্যময় ভূখণ্ড, যেখানে রয়েছে মরুভূমি, বনভূমি, উপকূলীয় অঞ্চল ও পর্বত। Great
+            Barrier Reef
+            বিশ্বের বৃহত্তম প্রবাল প্রাচীর এবং Uluru একটি গুরুত্বপূর্ণ আদিবাসী সাংস্কৃতিক নিদর্শন।
+          </p>
+          <ul>
+            <li>মরুভূমি: Simpson, Gibson ও Great Victoria Desert।</li>
+            <li>উপকূল: ২৫,৭৬০ কিমি দীর্ঘ, সমুদ্র সৈকত ও বন্দর সমৃদ্ধ।</li>
+            <li>Great Barrier Reef: বিশ্বের বৃহত্তম প্রবাল প্রাচীর, UNESCO বিশ্ব ঐতিহ্য।</li>
+            <li>Uluru: আদিবাসী Anangu জনগোষ্ঠীর পবিত্র পর্বত।</li>
+          </ul>
+        </article>
+
+        <article class="article card" id="au1-4">
+          <h3>১.৪: জাতিগোষ্ঠী ও ধর্ম</h3>
+          <p>
+            Australia একটি বহুজাতিক দেশ, যেখানে ইউরোপীয়, এশীয়, আফ্রিকান ও আদিবাসী জনগোষ্ঠী রয়েছে। ২০২১ সালের Census
+            অনুযায়ী,
+            খ্রিস্টধর্ম প্রধান ধর্ম হলেও “ধর্ম নেই” উত্তরদাতার সংখ্যা দ্রুত বাড়ছে।
+          </p>
+          <ul>
+            <li>প্রধান জাতিগোষ্ঠী: ইউরোপীয় (৫৪.৬৫%), এশীয় (১৭.০২%), আদিবাসী ও Torres Strait Islander (৩.৮%)।</li>
+            <li>ধর্ম: খ্রিস্টধর্ম (৪৩.৯%), ইসলাম, হিন্দু, বৌদ্ধ, ইহুদি ও অন্যান্য।</li>
+            <li>ধর্মহীন: ৩৮.৯% (২০২১), পূর্বে ৩০.১% (২০১৬)।</li>
+          </ul>
+        </article>
+
+        <article class="article card" id="au1-5">
+          <h3>১.৫: জনসংখ্যা ও ভাষাগত বৈচিত্র্য</h3>
+          <p>
+            ২০২৪ সালের শেষে Australia-এর জনসংখ্যা প্রায় ২.৭৪ কোটি। ইংরেজি প্রধান ভাষা হলেও Mandarin, Arabic, Vietnamese
+            ও
+            Cantonese প্রচলিত। আদিবাসী ভাষাও সংরক্ষিত ও পুনরুদ্ধার কার্যক্রমে অন্তর্ভুক্ত।
+          </p>
+          <ul>
+            <li>জনসংখ্যা (২০২৪): ২৭.৪ মিলিয়ন।</li>
+            <li>ভাষা: ইংরেজি (প্রধান), Mandarin, Arabic, Vietnamese, Cantonese।</li>
+            <li>আদিবাসী ভাষা: Yolŋu Matha, Pitjantjatjara, Arrernte ইত্যাদি।</li>
+            <li>ভাষাগত বৈচিত্র্য: অভিবাসন ও সাংস্কৃতিক সংমিশ্রণের ফলে।</li>
+          </ul>
+        </article>
+      </section>
+      <section class="chapter" id="timeline">
+        <h2>📜 অধ্যায় ২: সাময়িক ইতিহাস</h2>
+
+        <article class="article card" id="au2-1">
+          <h3>২.১: প্রাচীন যুগ</h3>
+          <p>
+            Australia-র প্রাচীন ইতিহাস শুরু হয় প্রায় ৫০,০০০–৬৫,০০০ বছর আগে, যখন আদিবাসী জনগোষ্ঠী দক্ষিণ-পূর্ব এশিয়া থেকে
+            এসে
+            স্থায়ীভাবে বসবাস শুরু করে। তারা ২৫০+ ভাষা ও সংস্কৃতির মাধ্যমে একটি জটিল সমাজ গঠন করে।
+          </p>
+          <ul>
+            <li>c. ৫০,০০০–৬৫,০০০ BCE: আদিবাসী জনগণের আগমন ও স্থায়ী বসবাস।</li>
+            <li>c. ২০,০০০ BCE: Arnhem Land ও Lake Mungo-তে প্রাচীন শিল্প ও কবরস্থানের নিদর্শন।</li>
+            <li>c. ৫,০০০ BCE: আদিবাসী সমাজে জটিল ধর্ম, আইন ও ভূমি ব্যবস্থাপনা গড়ে ওঠে।</li>
+          </ul>
+        </article>
+
+        <article class="article card" id="au2-2">
+          <h3>২.২: মধ্য যুগ</h3>
+          <p>
+            মধ্যযুগে Australia-র ইতিহাসে কোনো ইউরোপীয় আগমন ঘটেনি, তবে আদিবাসী সমাজে সাংস্কৃতিক ও আঞ্চলিক পরিবর্তন ঘটে।
+            Torres
+            Strait Islanders উত্তরাঞ্চলে আলাদা সাংস্কৃতিক পরিচয় গড়ে তোলে।
+          </p>
+          <ul>
+            <li>c. ১,০০০ CE: Torres Strait Islanders-এর সাংস্কৃতিক বিকাশ।</li>
+            <li>আদিবাসী সমাজে: মৌখিক ইতিহাস, শিল্প ও আঞ্চলিক সম্প্রসারণ।</li>
+          </ul>
+        </article>
+
+        <article class="article card" id="au2-3">
+          <h3>২.৩: ঔপনিবেশিক যুগ</h3>
+          <p>
+            ১৭৭০ সালে Captain James Cook Australia-র পূর্ব উপকূল আবিষ্কার করেন এবং ১৭৮৮ সালে প্রথম British penal colony
+            গঠিত
+            হয়। এরপর আদিবাসীদের ভূমি দখল, সংঘর্ষ ও জনসংখ্যা হ্রাস ঘটে।
+          </p>
+          <ul>
+            <li>১৭৭০: Captain Cook-এর আগমন ও “New South Wales” ঘোষণা।</li>
+            <li>১৭৮৮: প্রথম British penal colony গঠিত হয় Sydney-তে।</li>
+            <li>১৮৫১: Victoria-তে সোনার খনি আবিষ্কার, Gold Rush শুরু।</li>
+            <li>আদিবাসী জনগণের উপর প্রভাব: ভূমি দখল, রোগ, সংঘর্ষ ও সাংস্কৃতিক ক্ষয়।</li>
+          </ul>
+        </article>
+
+        <article class="article card" id="au2-4">
+          <h3>২.৪: আধুনিক যুগ</h3>
+          <p>
+            ১৯০১ সালে Australia ফেডারেশন গঠন করে এবং Commonwealth of Australia হিসেবে আত্মপ্রকাশ করে। ১৯৪৫–১৯৭৫ সময়কালে
+            অভিবাসন নীতি পরিবর্তন হয় এবং ১৯৬৭ সালে আদিবাসীদের নাগরিক অধিকার স্বীকৃত হয়।
+          </p>
+          <ul>
+            <li>১৯০১: ফেডারেশন গঠন, Commonwealth of Australia প্রতিষ্ঠা।</li>
+            <li>১৯৪৫–৭৫: White Australia Policy বাতিল, বহুজাতিক অভিবাসন শুরু।</li>
+            <li>১৯৬৭: গণভোটে আদিবাসীদের নাগরিক অধিকার স্বীকৃতি।</li>
+            <li>১৯৮৬: Australia Act—UK-এর আইনগত নিয়ন্ত্রণের অবসান।</li>
+          </ul>
+        </article>
+
+        <article class="article card" id="au2-5">
+          <h3>২.৫: বর্তমান যুগ</h3>
+          <p>
+            ২০০০ সালের পর Australia-তে প্রযুক্তি, পরিবেশ, আদিবাসী স্বীকৃতি ও আন্তর্জাতিক সম্পর্ক গুরুত্বপূর্ণ হয়ে ওঠে।
+            ২০২৩
+            সালে Voice to Parliament গণভোটে আদিবাসী সাংবিধানিক স্বীকৃতি প্রত্যাখ্যাত হয়, তবে আলোচনা অব্যাহত রয়েছে।
+          </p>
+          <ul>
+            <li>২০০৮: “Sorry” ভাষণ—আদিবাসী জনগণের প্রতি রাষ্ট্রীয় ক্ষমা।</li>
+            <li>২০২৩: Voice to Parliament গণভোটে “না” জয়ী, সাংবিধানিক স্বীকৃতি বিলম্বিত।</li>
+            <li>বর্তমান চ্যালেঞ্জ: জলবায়ু পরিবর্তন, অভিবাসন, আদিবাসী নীতি, ভূরাজনীতি।</li>
+          </ul>
+        </article>
+      </section>
+      <section class="chapter" id="tradition">
+        <h2>🏛️ অধ্যায় ৩: ঐতিহ্য</h2>
+
+        <article class="article card" id="au3-1">
+          <h3>৩.১: উৎসব ও অনুষ্ঠান</h3>
+          <p>
+            Australia-র উৎসব ও অনুষ্ঠান দেশটির আদিবাসী, অভিবাসী ও সমসাময়িক সংস্কৃতির মিশ্রণ। Vivid Sydney, Dreaming
+            Festival ও
+            NAIDOC Week জাতীয় পরিচয় ও সাংস্কৃতিক বৈচিত্র্য উদযাপন করে।
+          </p>
+          <ul>
+            <li>Vivid Sydney: আলোক ও সৃজনশীলতা উৎসব, জুন মাসে অনুষ্ঠিত হয়।</li>
+            <li>NAIDOC Week: আদিবাসী ইতিহাস ও সংস্কৃতি উদযাপন, জুলাই মাসে।</li>
+            <li>Dreaming Festival: আদিবাসী শিল্প, সংগীত ও নৃত্য প্রদর্শনী।</li>
+            <li>Australia Day (২৬ জানুয়ারি): বিতর্কিত জাতীয় দিবস, ঐতিহাসিক ও রাজনৈতিক বিতর্কে ঘেরা।</li>
+          </ul>
+        </article>
+
+        <article class="article card" id="au3-2">
+          <h3>৩.২: শিল্প ও সাহিত্য</h3>
+          <p>
+            Australia-র শিল্প ও সাহিত্য আদিবাসী Dreamtime গল্প, ঔপনিবেশিক কবিতা ও আধুনিক উপন্যাসে সমৃদ্ধ। Patrick White,
+            Sally
+            Morgan ও Liane Moriarty দেশটির সাহিত্যিক পরিচয়ের অংশ।
+          </p>
+          <ul>
+            <li>Dreamtime: আদিবাসী মৌখিক ঐতিহ্য, সৃষ্টির গল্প ও নৈতিক শিক্ষা।</li>
+            <li>Patrick White: Nobel Prize বিজয়ী সাহিত্যিক (১৯৭৩)।</li>
+            <li>Sally Morgan: আদিবাসী আত্মজীবনীমূলক লেখক, “My Place”।</li>
+            <li>National Gallery of Australia: আদিবাসী ও সমসাময়িক শিল্পের সংগ্রহশালা।</li>
+          </ul>
+        </article>
+
+        <article class="article card" id="au3-3">
+          <h3>৩.৩: খাদ্য ও পোশাক</h3>
+
+          <h4>খাদ্য:</h4>
+          <p>
+            Australia-র খাদ্য সংস্কৃতি বহুজাতিক প্রভাব ও স্থানীয় উপাদানে গঠিত। Bush tucker থেকে শুরু করে Meat pie ও
+            Vegemite
+            পর্যন্ত বৈচিত্র্য রয়েছে।
+          </p>
+          <ul>
+            <li>Meat Pie: জনপ্রিয় স্ন্যাকস, ফুটবল ম্যাচে প্রচলিত।</li>
+            <li>Vegemite: খামির নির্যাস, অস্ট্রেলীয় প্রাতঃরাশে প্রচলিত।</li>
+            <li>Lamington: নারকেল ও চকোলেট কেক, জাতীয় মিষ্টান্ন।</li>
+            <li>Bush Tucker: আদিবাসী খাদ্য যেমন kangaroo, witchetty grub, quandong।</li>
+          </ul>
+
+          <h4>পোশাক:</h4>
+          <p>
+            Australia-র ঐতিহ্যবাহী পোশাকে রয়েছে আদিবাসী Ceremonial wear ও ঔপনিবেশিক Outback attire। Akubra hats ও
+            Driza-Bone
+            coats দেশীয় পরিচয়ের অংশ।
+          </p>
+          <ul>
+            <li>Akubra Hat: চওড়া ব্রিমযুক্ত টুপি, Outback ও শহরে জনপ্রিয়।</li>
+            <li>Driza-Bone Coat: জলরোধী কোট, কৃষক ও যাত্রীদের জন্য।</li>
+            <li>Aboriginal Ceremonial Wear: রঙিন বডি পেইন্ট, পশম ও পাথরের অলঙ্কার।</li>
+            <li>Festive Attire: বহুজাতিক উৎসবে বিভিন্ন জাতিগোষ্ঠীর পোশাক প্রদর্শিত হয়।</li>
+          </ul>
+        </article>
+
+        <article class="article card" id="au3-4">
+          <h3>৩.৪: ঐতিহাসিক স্থাপত্য</h3>
+          <p>
+            Australia-র স্থাপত্যে রয়েছে আদিবাসী গঠন, ঔপনিবেশিক ভবন ও আধুনিক স্থাপনা। Sydney Opera House, Parliament
+            House ও
+            Federation-era বাড়িগুলো স্থাপত্য ঐতিহ্যের অংশ।
+          </p>
+          <ul>
+            <li>Sydney Opera House: UNESCO বিশ্ব ঐতিহ্য, আধুনিক স্থাপত্যের প্রতীক।</li>
+            <li>Parliament House, Canberra: আধুনিক ও প্রতীকী নকশা।</li>
+            <li>Victorian Architecture: ১৮৩৭–১৯০১ সময়কালের অলঙ্কৃত বাড়ি।</li>
+            <li>Aboriginal Structures: গুহা, মাটি ও কাঠের গঠন, Arnhem Land ও Uluru অঞ্চলে।</li>
+          </ul>
+        </article>
+
+        <article class="article card" id="au3-5">
+          <h3>৩.৫: সামাজিক গঠন ও পরিবার</h3>
+          <p>
+            Australia-তে পরিবার কাঠামো বহুবিধ—দম্পতি, একক অভিভাবক, সমলিঙ্গ পরিবার ও বহুজাতিক পরিবার। ২০২১ সালে ৬.৭৩
+            মিলিয়ন
+            পরিবার ছিল, যার মধ্যে ৩৬% ছিল শিশু সহ দম্পতি।
+          </p>
+          <ul>
+            <li>দম্পতি পরিবার: ৩৯% (শিশু ছাড়া), ৩৬% (শিশু সহ)।</li>
+            <li>একক অভিভাবক পরিবার: ১৬% (শিশু সহ ও ছাড়া)।</li>
+            <li>বহুজাতিক পরিবার: অভিবাসন ও সাংস্কৃতিক বৈচিত্র্যের কারণে।</li>
+            <li>আধুনিক পরিবর্তন: সমলিঙ্গ পরিবার, যৌথ অভিভাবকত্ব ও একক জীবনধারা।</li>
+          </ul>
+        </article>
+
+        <article class="article card" id="au3-6">
+          <h3>৩.৬: গণমাধ্যম ও যোগাযোগ</h3>
+          <p>
+            Australia-র গণমাধ্যমে রয়েছে ABC, SBS, Nine Network ও News Corp-এর মতো প্রতিষ্ঠান। ডিজিটাল মিডিয়া, সামাজিক
+            যোগাযোগ
+            ও স্বাধীন সাংবাদিকতা গুরুত্বপূর্ণ ভূমিকা পালন করে।
+          </p>
+          <ul>
+            <li>ABC: জাতীয় সম্প্রচারক, শিক্ষা ও সংবাদে অগ্রণী।</li>
+            <li>SBS: বহুজাতিক সম্প্রচার, ৬০+ ভাষায় অনুষ্ঠান।</li>
+            <li>News Corp: বাণিজ্যিক সংবাদপত্র ও টিভি চ্যানেল।</li>
+            <li>ডিজিটাল মিডিয়া: TikTok, YouTube, Instagram—তরুণদের মধ্যে জনপ্রিয়।</li>
+          </ul>
+        </article>
+      </section>
+      <section class="chapter" id="weather">
+        <h2>🌦️ অধ্যায় ৪: জলবায়ু</h2>
+
+        <article class="article card" id="au4-1">
+          <h3>৪.১: ভৌগোলিক অবস্থান ও জলবায়ুর প্রকৃতি</h3>
+          <p>
+            Australia দক্ষিণ গোলার্ধে অবস্থিত একটি মহাদেশীয় দেশ, যার জলবায়ু বৈচিত্র্যময়। দেশটি আটটি প্রধান জলবায়ু অঞ্চলে
+            বিভক্ত—উষ্ণমণ্ডলীয়, উপ-উষ্ণ, মরুভূমি, ভূমধ্যসাগরীয়, সমুদ্রীয়, আল্পাইন, সমতল ও উপকূলীয়। বার্ষিক গড় বৃষ্টিপাত
+            ৪১৯
+            মিমি, যা বিশ্বের দ্বিতীয় শুষ্কতম মহাদেশ হিসেবে চিহ্নিত।
+          </p>
+          <ul>
+            <li>জলবায়ু অঞ্চল: উষ্ণমণ্ডলীয়, মরুভূমি, উপকূলীয়, আল্পাইন ইত্যাদি।</li>
+            <li>বৃষ্টিপাত: ৮০% ভূমিতে বছরে ৬০০ মিমি-এর কম, ৫০%-এ ৩০০ মিমি-এরও কম।</li>
+            <li>উত্তরাঞ্চল: গ্রীষ্মে বর্ষা, দক্ষিণাঞ্চল: শীতকালে শুষ্কতা।</li>
+          </ul>
+        </article>
+
+        <article class="article card" id="au4-2">
+          <h3>৪.২: জলবায়ু পরিবর্তন ও এর প্রভাব</h3>
+          <p>
+            Australia-তে জলবায়ু পরিবর্তনের ফলে তাপমাত্রা বৃদ্ধি, খরা, দাবানল, বন্যা ও সমুদ্র উষ্ণতা বেড়েছে। National
+            Climate
+            Risk Assessment অনুযায়ী, ২০৫০ সালের মধ্যে কৃষি, স্বাস্থ্য, অবকাঠামো ও বাস্তুতন্ত্রে বড় ধরনের ঝুঁকি দেখা
+            যাবে।
+          </p>
+          <ul>
+            <li>প্রধান ঝুঁকি: তাপপ্রবাহ, খরা, দাবানল, বন্যা, সমুদ্র উষ্ণতা।</li>
+            <li>সময়কাল: ১৮৫০–২০৯০ পর্যন্ত চারটি পর্যায়ে ঝুঁকি বিশ্লেষণ।</li>
+            <li>ক্ষতিগ্রস্ত খাত: কৃষি, স্বাস্থ্য, অবকাঠামো, বাস্তুতন্ত্র।</li>
+          </ul>
+        </article>
+
+        <article class="article card" id="au4-3">
+          <h3>৪.৩: দুর্যোগ ব্যবস্থাপনা ও প্রস্তুতি</h3>
+          <p>
+            Australia Disaster Preparedness Framework ও Crisis Management Framework অনুসারে দেশটি দুর্যোগ মোকাবিলায়
+            প্রস্তুতি
+            নেয়। National Emergency Management Agency (NEMA) দুর্যোগ ঝুঁকি হ্রাস ও পুনরুদ্ধারে নেতৃত্ব দেয়।
+          </p>
+          <ul>
+            <li>প্রধান দুর্যোগ: দাবানল, বন্যা, ঘূর্ণিঝড়, তাপপ্রবাহ।</li>
+            <li>NEMA: জাতীয় দুর্যোগ ব্যবস্থাপনা সংস্থা।</li>
+            <li>Disaster Ready Fund: দুর্যোগ প্রস্তুতি ও ঝুঁকি হ্রাসে অর্থায়ন।</li>
+            <li>উচ্চ ঝুঁকির মৌসুম: অক্টোবর–এপ্রিল।</li>
+          </ul>
+        </article>
+
+        <article class="article card" id="au4-4">
+          <h3>৪.৪: পরিবেশ সংরক্ষণ ও অভিযোজন</h3>
+          <p>
+            Australia ২০২১–২০২৫ সময়কালের জন্য National Climate Resilience and Adaptation Strategy গ্রহণ করেছে। DCCEEW ও
+            PM&C
+            পরিবেশ সংরক্ষণ, জল ব্যবস্থাপনা ও অভিযোজন কৌশল বাস্তবায়ন করছে।
+          </p>
+          <ul>
+            <li>Resilience Strategy: জলবায়ু পরিবর্তনের প্রভাব মোকাবিলায় কৌশল।</li>
+            <li>DCCEEW: পরিবেশ, জল ও অভিযোজন নীতির নেতৃত্ব।</li>
+            <li>PM&C: আন্তঃবিভাগীয় সমন্বয় ও নীতিনির্ধারণ।</li>
+          </ul>
+        </article>
+
+        <article class="article card" id="au4-5">
+          <h3>৪.৫: জলবায়ু নীতি ও আন্তর্জাতিক ভূমিকা</h3>
+          <p>
+            Australia Paris Agreement-এর সদস্য এবং Climate Change Act ২০২২ অনুযায়ী ২০৫০ সালের মধ্যে নিট শূন্য নির্গমন
+            লক্ষ্য
+            নির্ধারণ করেছে। দেশটি দক্ষিণ-পূর্ব এশিয়া ও প্রশান্ত মহাসাগরীয় অঞ্চলে জলবায়ু সহযোগিতা জোরদার করছে।
+          </p>
+          <ul>
+            <li>Climate Change Act (২০২২): ২০৩০ সালের মধ্যে ৪৩% নির্গমন হ্রাস।</li>
+            <li>Paris Agreement: বৈশ্বিক জলবায়ু প্রতিশ্রুতিতে অংশগ্রহণ।</li>
+            <li>DFAT: আন্তর্জাতিক জলবায়ু কূটনীতি ও উন্নয়ন সহায়তা।</li>
+          </ul>
+        </article>
+
+        <article class="article card" id="au4-6">
+          <h3>৪.৬: জলবায়ু সচেতনতা ও শিক্ষা</h3>
+          <p>
+            Australia Climate Change Education Summit, College of Climate Change ও Climate Change Education Network-এর
+            মাধ্যমে
+            জলবায়ু শিক্ষা ও সচেতনতা বাড়ানো হচ্ছে। তরুণ, শিক্ষক, বিজ্ঞানী ও নীতিনির্ধারকদের অংশগ্রহণে ২০২৪–২৫ সালের
+            কর্মপরিকল্পনা গৃহীত হয়েছে।
+          </p>
+          <ul>
+            <li>Education Summit: ২০২৪–২৫ সালের কর্মপরিকল্পনা ও সংলাপ।</li>
+            <li>College of Climate Change: পরিবেশ নেতৃত্ব ও প্রশিক্ষণ।</li>
+            <li>Education Network: জলবায়ু পাঠ্যক্রম ও গবেষণা।</li>
+          </ul>
+        </article>
+      </section>
+      <section class="chapter" id="tourism">
+        <h2>🌄 অধ্যায় ৫: পর্যটন</h2>
+
+        <article class="article card" id="au5-1">
+          <h3>৫.১: প্রাকৃতিক সৌন্দর্য</h3>
+          <p>
+            Australia-র প্রাকৃতিক সৌন্দর্য বৈচিত্র্যময়—প্রবাল প্রাচীর, মরুভূমি, বনভূমি, হ্রদ ও পর্বত। Great Barrier
+            Reef,
+            Uluru, Daintree Rainforest ও Pink Lake দেশটির অনন্য পরিবেশ ও জীববৈচিত্র্যের নিদর্শন।
+          </p>
+          <ul>
+            <li>Great Barrier Reef: বিশ্বের বৃহত্তম প্রবাল প্রাচীর, UNESCO বিশ্ব ঐতিহ্য।</li>
+            <li>Uluru: লাল পাথরের পর্বত, আদিবাসী Anangu জনগোষ্ঠীর পবিত্র স্থান।</li>
+            <li>Daintree Rainforest: বিশ্বের প্রাচীনতম জীবন্ত বনভূমি।</li>
+            <li>Pink Lake: প্রাকৃতিক লবণাক্ত হ্রদ, রঙের জন্য বিখ্যাত।</li>
+          </ul>
+        </article>
+
+        <article class="article card" id="au5-2">
+          <h3>৫.২: পর্যটন স্থান</h3>
+          <p>
+            Australia-র পর্যটন স্থানগুলোতে রয়েছে শহর, ঐতিহাসিক নিদর্শন, সৈকত ও প্রাকৃতিক অভয়ারণ্য। Sydney Opera House,
+            Great
+            Ocean Road, Kakadu National Park ও Fraser Island জনপ্রিয় গন্তব্য।
+          </p>
+          <ul>
+            <li>Sydney Opera House: আধুনিক স্থাপত্য ও সাংস্কৃতিক কেন্দ্র।</li>
+            <li>Great Ocean Road: Victoria-র উপকূলীয় রাস্তা, Twelve Apostles দৃশ্যমান।</li>
+            <li>Kakadu National Park: আদিবাসী শিল্প, জলাভূমি ও বন্যপ্রাণী।</li>
+            <li>Fraser Island: বিশ্বের বৃহত্তম বালুকাময় দ্বীপ, UNESCO বিশ্ব ঐতিহ্য।</li>
+          </ul>
+        </article>
+
+        <article class="article card" id="au5-3">
+          <h3>৫.৩: পর্যটন নীতিমালা ও নিরাপত্তা</h3>
+          <p>
+            Australia ২০২৫–২৬ পর্যটন কৌশলে নিরাপত্তা, অন্তর্ভুক্তি ও টেকসই উন্নয়নকে অগ্রাধিকার দিয়েছে। COVID-১৯ পরবর্তী
+            সময়ে
+            স্বাস্থ্যবিধি, জরুরি সেবা ও ভ্রমণ তথ্য সহজলভ্য করা হয়েছে।
+          </p>
+          <ul>
+            <li>Tourism Australia: আন্তর্জাতিক বিপণন ও পর্যটন উন্নয়নের দায়িত্বপ্রাপ্ত সংস্থা।</li>
+            <li>নিরাপত্তা ব্যবস্থা: জরুরি নম্বর 000, পর্যটন তথ্য কেন্দ্র, স্বাস্থ্য সহায়তা।</li>
+            <li>নীতিমালা: Indigenous tourism, পরিবেশবান্ধব ভ্রমণ, আঞ্চলিক সম্প্রসারণ।</li>
+            <li>২০২৫–২৬ কৌশল: অন্তর্ভুক্তি, নিরাপত্তা, অভিজ্ঞতা উন্নয়ন।</li>
+          </ul>
+        </article>
+
+        <article class="article card" id="au5-4">
+          <h3>৫.৪: পর্যটন গবেষণা ও পরিসংখ্যান</h3>
+          <p>
+            ২০২৫ সালের আগস্টে Australia-তে মোট আগমন ছিল ১৮.০৯ লাখ, যার মধ্যে ৭.৫৩ লাখ ছিল আন্তর্জাতিক পর্যটক। অভ্যন্তরীণ
+            পর্যটনে ২০২৫ সালের জুনে ৬.৭% বৃদ্ধি হয়েছে এবং পর্যটন খাতে আয় $৬০ বিলিয়নের বেশি।
+          </p>
+          <ul>
+            <li>আন্তর্জাতিক আগমন (আগস্ট ২০২৫): ৭৫৩,৩২০ জন, ১৪.৩% বৃদ্ধি।</li>
+            <li>মোট আগমন: ১,৮০৯,৮১০ জন, ৯.৩% বৃদ্ধি।</li>
+            <li>অভ্যন্তরীণ পর্যটন (জুন ২০২৫): ৬.৭% বৃদ্ধি, নতুন DoTS পদ্ধতি চালু।</li>
+            <li>পর্যটন আয়: $৬০+ বিলিয়ন (২০২৫), ২০২৯ পর্যন্ত বৃদ্ধির পূর্বাভাস।</li>
+          </ul>
+        </article>
+      </section>
+      <section class="chapter" id="economy">
+        <h2>🌐 অধ্যায় ৬: অর্থনীতি</h2>
+
+        <article class="article card" id="au6-1">
+          <h3>৬.১: অর্থনৈতিক ইতিহাস</h3>
+          <p>
+            Australia-র অর্থনৈতিক ইতিহাস শুরু হয় ১৭৮৮ সালে ঔপনিবেশিক বন্দিশিবির থেকে। ১৯ শতকে পশুপালন, খনিজ ও কৃষি খাতে
+            প্রবৃদ্ধি ঘটে। ১৯০১ সালে ফেডারেশন গঠনের পর দেশটি ধীরে ধীরে একটি উন্নত, পরিষেবা-নির্ভর অর্থনীতিতে রূপান্তরিত
+            হয়।
+          </p>
+          <ul>
+            <li>১৭৮৮: British penal colony প্রতিষ্ঠা, অর্থনৈতিক ভিত্তি গঠনের সূচনা।</li>
+            <li>১৮৫০–১৯০০: Gold Rush ও পশুপালন খাতে প্রবৃদ্ধি।</li>
+            <li>১৯০১: ফেডারেশন গঠন, অভ্যন্তরীণ বাজার সম্প্রসারণ।</li>
+            <li>১৯৪৫–বর্তমান: পরিষেবা, খনিজ ও প্রযুক্তি খাতে আধুনিক অর্থনীতি।</li>
+          </ul>
+        </article>
+
+        <article class="article card" id="au6-2">
+          <h3>৬.২: মুদ্রা ও ব্যাংকিং</h3>
+          <p>
+            Australia-র মুদ্রা হলো Australian Dollar (AUD), যা ১৯৬৬ সালে চালু হয়। ব্যাংকিং ব্যবস্থা শক্তিশালী ও
+            প্রযুক্তিনির্ভর, যার নেতৃত্বে রয়েছে Reserve Bank of Australia (RBA)। ডিজিটাল ব্যাংকিং, EFTPOS ও অনলাইন
+            লেনদেন
+            ব্যাপকভাবে ব্যবহৃত।
+          </p>
+          <ul>
+            <li>মুদ্রা: AUD ($), ৫, ১০, ২০, ৫০, ১০০ ডলারের নোট ও ৫¢–২$ কয়েন।</li>
+            <li>RBA: কেন্দ্রীয় ব্যাংক, মুদ্রানীতি ও আর্থিক স্থিতিশীলতায় নিয়োজিত।</li>
+            <li>ব্যাংকিং: ANZ, Commonwealth Bank, NAB, Westpac—প্রধান ব্যাংক।</li>
+            <li>ডিজিটাল লেনদেন: EFTPOS, PayID, Tap-and-go প্রযুক্তি।</li>
+          </ul>
+        </article>
+
+        <article class="article card" id="au6-3">
+          <h3>৬.৩: প্রধান শিল্প ও খাত</h3>
+          <p>
+            Australia-র অর্থনীতিতে খনিজ, কৃষি, স্বাস্থ্য, শিক্ষা, নির্মাণ ও পরিষেবা খাত গুরুত্বপূর্ণ। ২০২৩–২৪ সালে
+            Mining খাতে
+            ২৭.৪% আয় হ্রাস পেলেও Transport ও Warehousing খাতে ১০৩.৩% বৃদ্ধি হয়েছে।
+          </p>
+          <ul>
+            <li>Mining: লৌহ আকরিক, কয়লা, স্বর্ণ—রপ্তানির প্রধান উৎস।</li>
+            <li>Health & Education: GDP-এর ১৩.৪%, কর্মসংস্থানে শীর্ষে।</li>
+            <li>Construction: ৭.৫%, আবাসন ও অবকাঠামো উন্নয়নে গুরুত্বপূর্ণ।</li>
+            <li>Finance: ৭.৫%, ব্যাংকিং ও বিনিয়োগ খাত।</li>
+          </ul>
+        </article>
+
+        <article class="article card" id="au6-4">
+          <h3>৬.৪: বাণিজ্য ও বিনিয়োগ</h3>
+          <p>
+            Australia-র বাণিজ্য ও বিনিয়োগ নীতিতে রয়েছে Indo-Pacific অংশীদারিত্ব, PACER Plus, CSP 2.0 ও Africa Trade
+            Inquiry।
+            ২০২৫ সালে Fiji, Singapore ও Africa-র সঙ্গে নতুন চুক্তি ও আলোচনা হয়েছে।
+          </p>
+          <ul>
+            <li>Indo-Pacific: Fiji ও ASEAN দেশগুলোর সঙ্গে বাণিজ্য সম্প্রসারণ।</li>
+            <li>CSP 2.0: Singapore-এর সঙ্গে ২০+ চুক্তি, AI ও খাদ্য নিরাপত্তা।</li>
+            <li>Africa Inquiry: $১২.৭ বিলিয়ন দ্বিপাক্ষিক বাণিজ্য, নতুন সুযোগ অন্বেষণ।</li>
+            <li>Austrade: রপ্তানি, বিনিয়োগ ও পর্যটন উন্নয়নে সহায়তা।</li>
+          </ul>
+        </article>
+
+        <article class="article card" id="au6-5">
+          <h3>৬.৫: আমদানি ও রপ্তানি</h3>
+
+          <h4>আমদানি:</h4>
+          <p>
+            ২০২৫ সালে Australia-র প্রধান আমদানি পণ্য ছিল যানবাহন, যন্ত্রপাতি, তেল ও ফার্মাসিউটিক্যাল। চীন, যুক্তরাষ্ট্র,
+            জাপান
+            ও জার্মানি প্রধান উৎস দেশ।
+          </p>
+          <ul>
+            <li>পণ্য: গাড়ি, ইলেকট্রনিক যন্ত্র, তেল, ওষুধ।</li>
+            <li>উৎস দেশ: চীন, যুক্তরাষ্ট্র, জাপান, জার্মানি।</li>
+          </ul>
+
+          <h4>রপ্তানি:</h4>
+          <p>
+            Australia বিশ্বের শীর্ষ লৌহ আকরিক, কয়লা ও কৃষিপণ্য রপ্তানিকারক। ২০২৫ সালে রপ্তানি আয় $৪৫০ বিলিয়ন ছাড়িয়েছে।
+          </p>
+          <ul>
+            <li>পণ্য: লৌহ আকরিক, কয়লা, গম, গবাদি পশু, স্বর্ণ।</li>
+            <li>গন্তব্য দেশ: চীন (৩০.৪%), জাপান, কোরিয়া, যুক্তরাষ্ট্র, ভারত।</li>
+          </ul>
+        </article>
+
+        <article class="article card" id="au6-6">
+          <h3>৬.৬: বর্তমান অর্থনৈতিক অবস্থা</h3>
+          <p>
+            ২০২৫ সালের জুনে Australia-র GDP ০.৬% বৃদ্ধি পেয়েছে, যা আগের ত্রৈমাসিকে আবহাওয়া-জনিত পতনের পর পুনরুদ্ধার।
+            বার্ষিক
+            প্রবৃদ্ধি ১.৩%, যা COVID-পরবর্তী সর্বনিম্ন। Stage 3 কর ছাড় ও সুদের হার হ্রাসে ভোক্তা আস্থা বেড়েছে।
+          </p>
+          <ul>
+            <li>GDP বৃদ্ধি (Q2 ২০২৫): ০.৬%।</li>
+            <li>বার্ষিক বৃদ্ধি: ১.৩%, COVID ছাড়া সর্বনিম্ন।</li>
+            <li>ভোক্তা আস্থা: কর ছাড় ও সুদের হার হ্রাসে উন্নত।</li>
+          </ul>
+        </article>
+
+        <article class="article card" id="au6-7">
+          <h3>৬.৭: কর্মসংস্থান ও শ্রম বাজার</h3>
+          <p>
+            সেপ্টেম্বর ২০২৫-এ Australia-র বেকারত্ব ৪.৩% এবং অংশগ্রহণ হার ৬৬.৯%। কর্মসংস্থান ১.৪৬ কোটি, যার মধ্যে
+            পোস্ট-স্কুল
+            যোগ্যতা সম্পন্ন চাকরি বৃদ্ধি পেয়েছে। শ্রম বাজারে ধীরতা থাকলেও স্থিতিশীল।
+          </p>
+          <ul>
+            <li>বেকারত্ব হার: ৪.৩% (সেপ্টেম্বর ২০২৫)।</li>
+            <li>অংশগ্রহণ হার: ৬৬.৯%।</li>
+            <li>মোট কর্মসংস্থান: ১,৪৬,৪৭,০০০ জন।</li>
+            <li>প্রবণতা: পোস্ট-স্কুল যোগ্যতা সম্পন্ন চাকরি বৃদ্ধি।</li>
+          </ul>
+        </article>
+
+        <article class="article card" id="au6-8">
+          <h3>৬.৮: টেকসই উন্নয়ন ও গ্রামীণ অর্থনীতি</h3>
+          <p>
+            Australia ২০২৫ সালে Net Zero Plan ও Agriculture and Land Sector Plan চালু করেছে, যা কৃষি খাতে কম নির্গমন,
+            উৎপাদন
+            বৃদ্ধি ও প্রকৃতি পুনরুদ্ধারে সহায়ক। গ্রামীণ অর্থনীতিতে জনসংখ্যা হ্রাস, সেবা ঘাটতি ও আবাসন সংকট মোকাবিলায়
+            বহুমুখী
+            কৌশল গ্রহণ করা হয়েছে।
+          </p>
+          <ul>
+            <li><strong>Net Zero Plan:</strong> ২০৫০ সালের মধ্যে নিট শূন্য নির্গমন লক্ষ্য, কৃষি ও ভূমি খাতে অভিযোজন
+              কৌশল।</li>
+            <li><strong>Agriculture Sector Plan:</strong> কম নির্গমন খাদ্য ও ফাইবার উৎপাদন, কৃষকের জন্য প্রযুক্তি ও
+              প্রশিক্ষণ।
+            </li>
+            <li><strong>Nature Repair:</strong> কার্বন সংরক্ষণ, বন পুনরুদ্ধার ও জীববৈচিত্র্য সংরক্ষণে বিনিয়োগ।</li>
+            <li><strong>Rural Revitalisation:</strong> জনসংখ্যা হ্রাস মোকাবিলা, সেবা সম্প্রসারণ, আবাসন ও কর্মসংস্থান
+              উন্নয়ন।
+            </li>
+            <li><strong>Wunderbuild Strategy:</strong> অর্থনৈতিক, সামাজিক ও পরিবেশগত কৌশলের সমন্বয়ে গ্রামীণ পুনরুদ্ধার।
+            </li>
+          </ul>
+        </article>
+      </section>
+      <section class="chapter" id="education">
+        <h2>📚 অধ্যায় ৭: শিক্ষা</h2>
+
+        <article class="article card" id="au7-1">
+          <h3>৭.১: শিক্ষার সূচনা</h3>
+          <p>
+            Australia-র শিক্ষা ব্যবস্থা শুরু হয় ঔপনিবেশিক যুগে ধর্মীয় বিদ্যালয় দিয়ে। ১৯০০ সালের পর রাজ্যভিত্তিক সরকার
+            বাধ্যতামূলক প্রাথমিক শিক্ষা চালু করে। আদিবাসী শিক্ষায় দীর্ঘকাল বৈষম্য থাকলেও বর্তমানে অন্তর্ভুক্তিমূলক
+            নীতিমালা
+            গৃহীত হয়েছে।
+          </p>
+          <ul>
+            <li>১৮৩০–১৮৫০: ধর্মীয় ও স্থানীয় বিদ্যালয় প্রতিষ্ঠা।</li>
+            <li>১৯০০+: বাধ্যতামূলক প্রাথমিক শিক্ষা চালু।</li>
+            <li>১৯৬০+: আদিবাসী শিক্ষায় নীতিগত পরিবর্তন শুরু।</li>
+          </ul>
+        </article>
+
+        <article class="article card" id="au7-2">
+          <h3>৭.২: শিক্ষা নীতিমালা ও চ্যালেঞ্জ</h3>
+          <p>
+            Australia-র শিক্ষা নীতিমালায় রয়েছে Alice Springs (Mparntwe) Declaration, যা সমতা, অন্তর্ভুক্তি ও দক্ষতা
+            উন্নয়নে
+            জোর দেয়। চ্যালেঞ্জের মধ্যে রয়েছে আঞ্চলিক বৈষম্য, আদিবাসী শিক্ষায় ঘাটতি ও STEM দক্ষতার অভাব।
+          </p>
+          <ul>
+            <li>নীতিমালা: Alice Springs Declaration (২০১৯), ১১টি জাতীয় অঙ্গীকার।</li>
+            <li>চ্যালেঞ্জ: STEM দক্ষতা, আঞ্চলিক বৈষম্য, আদিবাসী শিক্ষায় অংশগ্রহণ।</li>
+            <li>২০২৩: National Report on Schooling অনুযায়ী অগ্রগতি ও ঘাটতির চিত্র।</li>
+          </ul>
+        </article>
+
+        <article class="article card" id="au7-3">
+          <h3>৭.৩: আন্তর্জাতিক শিক্ষা প্রতিষ্ঠান সমূহ</h3>
+          <p>
+            Australia-তে রয়েছে ৪০+ আন্তর্জাতিক বিদ্যালয় ও ৩৯টি বিশ্ববিদ্যালয়, যার মধ্যে University of Melbourne, ANU ও
+            UNSW
+            বিশ্ব র‍্যাংকিংয়ে শীর্ষে। আন্তর্জাতিক শিক্ষার্থীদের জন্য English Language Institute ও Pathway Program চালু
+            রয়েছে।
+          </p>
+          <ul>
+            <li>University of Melbourne: QS World Ranking-এ শীর্ষ ৩৫-এর মধ্যে।</li>
+            <li>ANU: গবেষণা ও আন্তর্জাতিক সম্পর্কের জন্য পরিচিত।</li>
+            <li>UNSW: প্রযুক্তি ও ব্যবসা শিক্ষায় অগ্রণী।</li>
+            <li>International Schools: IB ও Cambridge পাঠ্যক্রমে পরিচালিত।</li>
+          </ul>
+        </article>
+
+        <article class="article card" id="au7-4">
+          <h3>৭.৪: গবেষণা প্রতিষ্ঠান ও উদ্যোগ</h3>
+          <p>
+            Australia-র গবেষণা খাতে রয়েছে CSIRO, ARC ও Go8 বিশ্ববিদ্যালয়। Climate, AI, স্বাস্থ্য ও Indigenous
+            Knowledge-এ
+            গবেষণা জোরদার হয়েছে। ২০২৫ সালে National Research Infrastructure Strategy পুনর্গঠন হয়।
+          </p>
+          <ul>
+            <li>CSIRO: জাতীয় বিজ্ঞান সংস্থা, প্রযুক্তি ও পরিবেশ গবেষণায় অগ্রণী।</li>
+            <li>ARC: Australian Research Council, গবেষণা অনুদান প্রদানকারী।</li>
+            <li>Group of Eight (Go8): শীর্ষ ৮টি গবেষণা বিশ্ববিদ্যালয়।</li>
+            <li>২০২৫: National Research Infrastructure Strategy পুনর্গঠন।</li>
+          </ul>
+        </article>
+
+        <article class="article card" id="au7-5">
+          <h3>৭.৫: শিক্ষার হার ও বর্তমান অবস্থা</h3>
+          <p>
+            Australia-র সাক্ষরতার হার ৯৯% এর বেশি। ২০২৪ সালে ৩৪১,৫৬৮ শিশু প্রিস্কুলে ভর্তি হয়, যার মধ্যে ২৩,২০৬ ছিল
+            আদিবাসী।
+            ২০২৫ সালে STEM ও প্রযুক্তি শিক্ষায় অংশগ্রহণ বৃদ্ধি পেয়েছে।
+          </p>
+          <ul>
+            <li>সাক্ষরতার হার: ৯৯%+ (২০২৫)</li>
+            <li>প্রিস্কুল ভর্তি (২০২৪): ৩৪১,৫৬৮ শিশু, ১.৩% বৃদ্ধি।</li>
+            <li>আদিবাসী শিশু: ২৩,২০৬, ২.২% বৃদ্ধি।</li>
+            <li>শিক্ষা ব্যয়: ৭৮% শিশু $৪/ঘণ্টা বা কম খরচে প্রিস্কুলে অংশগ্রহণ করে।</li>
+          </ul>
+        </article>
+
+        <article class="article card" id="au7-6">
+          <h3>৭.৬: শিক্ষা ও সামাজিক পরিবর্তন</h3>
+          <p>
+            Australia-তে শিক্ষা সামাজিক অন্তর্ভুক্তি, কর্মসংস্থান ও প্রযুক্তি দক্ষতা বৃদ্ধিতে ভূমিকা রাখে। ২০২৫ সালে
+            Climate
+            Curriculum, Indigenous Inclusion ও Digital Literacy কর্মসূচি চালু হয়।
+          </p>
+          <ul>
+            <li>Climate Curriculum: পরিবেশ ও অভিযোজন শিক্ষায় জোর।</li>
+            <li>Indigenous Inclusion: আদিবাসী ইতিহাস ও ভাষা পাঠ্যক্রমে অন্তর্ভুক্ত।</li>
+            <li>Digital Literacy: AI, কোডিং ও সাইবার নিরাপত্তা প্রশিক্ষণ।</li>
+          </ul>
+        </article>
+      </section>
+      <section class="chapter" id="technology">
+        <h2>🌐 অধ্যায় ৮: প্রযুক্তি</h2>
+
+        <article class="article card" id="au8-1">
+          <h3>৮.১: প্রযুক্তির ইতিহাস</h3>
+          <p>
+            Australia-র প্রযুক্তি ইতিহাসে রয়েছে Indigenous প্রযুক্তি, ঔপনিবেশিক উদ্ভাবন ও আধুনিক বৈজ্ঞানিক অগ্রগতি।
+            দেশটি
+            Black Box, Wi-Fi, Cochlear Implant ও Scramjet-এর মতো উদ্ভাবনের জন্য বিশ্বজুড়ে পরিচিত।
+          </p>
+          <ul>
+            <li>Indigenous প্রযুক্তি: Woomera, boomerang, bush medicine।</li>
+            <li>১৯৫০–৭০: Black Box (David Warren), solar hot water system।</li>
+            <li>১৯৯০+: Wi-Fi (CSIRO), Cochlear Implant, polymer banknotes।</li>
+            <li>বর্তমান: Scramjet, quantum computing, AI গবেষণা।</li>
+          </ul>
+        </article>
+
+        <article class="article card" id="au8-2">
+          <h3>৮.২: প্রধান প্রযুক্তি প্রতিষ্ঠান</h3>
+          <p>
+            Australia-তে রয়েছে Atlassian, Canva, WiseTech Global, CSIRO ও TechnologyOne-এর মতো শীর্ষ প্রযুক্তি
+            প্রতিষ্ঠান।
+            দেশটি সফটওয়্যার, লজিস্টিক, ফিনটেক ও গবেষণা খাতে বিশ্বমানের প্রতিষ্ঠান গড়ে তুলেছে।
+          </p>
+          <ul>
+            <li>Atlassian: $54.28B মার্কেট ক্যাপ, Jira ও Confluence-এর নির্মাতা।</li>
+            <li>Canva: গ্রাফিক ডিজাইন SaaS, বিশ্বব্যাপী ১৫০M+ ব্যবহারকারী।</li>
+            <li>WiseTech Global: লজিস্টিক সফটওয়্যার, $21.45B মার্কেট ক্যাপ।</li>
+            <li>CSIRO: জাতীয় গবেষণা সংস্থা, Wi-Fi ও পরিবেশ প্রযুক্তিতে অগ্রণী।</li>
+          </ul>
+        </article>
+
+        <article class="article card" id="au8-3">
+          <h3>৮.৩: প্রযুক্তির বর্তমান অবস্থা</h3>
+          <p>
+            ২০২৫ সালে Australia-র IT খাতে ব্যয় $146.85B, যার মধ্যে সফটওয়্যার খাতে $45.85B। AI, ক্লাউড, সাইবার নিরাপত্তা
+            ও IoT
+            খাতে প্রবৃদ্ধি হচ্ছে। ডিজিটাল ব্যবহারকারীর সংখ্যা ২.৩ কোটি ছাড়িয়েছে।
+          </p>
+          <ul>
+            <li>IT ব্যয় (২০২৫): $146.85B, ৮.৭% বার্ষিক বৃদ্ধি।</li>
+            <li>সফটওয়্যার খাত: $45.85B, ১৩.৪% বৃদ্ধি।</li>
+            <li>ডিজিটাল ব্যবহারকারী: ২.৩+ কোটি, ৮৭% ইন্টারনেট প্রবেশাধিকার।</li>
+            <li>প্রবণতা: AI, ক্লাউড, SaaS, সাইবার নিরাপত্তা।</li>
+          </ul>
+        </article>
+
+        <article class="article card" id="au8-4">
+          <h3>৮.৪: উদ্ভাবন ও স্টার্টআপ সংস্কৃতি</h3>
+          <p>
+            Australia-র স্টার্টআপ ইকোসিস্টেমে রয়েছে ৩,৪৫৭+ কোম্পানি, ৯টি ইউনিকর্ন ও $৭৩B+ সম্মিলিত মূল্য। Sydney ও
+            Melbourne
+            শীর্ষ শহর, যেখানে AI, ফিনটেক ও স্বাস্থ্য প্রযুক্তিতে উদ্ভাবন হচ্ছে।
+          </p>
+          <ul>
+            <li>স্টার্টআপ সংখ্যা: ৩,৪৫৭, ২৪.৮% বার্ষিক বৃদ্ধি।</li>
+            <li>ইউনিকর্ন: Canva, Airwallex, CultureAmp, Immutable ইত্যাদি।</li>
+            <li>Sydney: $55B ইকোসিস্টেম মূল্য, বিশ্ব র‍্যাংকিং #12।</li>
+            <li>Melbourne: $18B, AI ও স্বাস্থ্য প্রযুক্তিতে অগ্রগামী।</li>
+          </ul>
+        </article>
+
+        <article class="article card" id="au8-5">
+          <h3>৮.৫: প্রযুক্তির ভবিষ্যৎ</h3>
+          <p>
+            Australia ২০৫০ সালের মধ্যে শীর্ষ ১০ ডিজিটাল অর্থনীতি হওয়ার লক্ষ্য নিয়েছে। AI, quantum, climate tech ও সাইবার
+            নিরাপত্তায় R&D Tax Incentive ও Digital Embassy নীতিমালা চালু হয়েছে।
+          </p>
+          <ul>
+            <li>AI Ecosystem: ৭০% স্টার্টআপ AI ব্যবহার করে, ২০২৫ সালে বৃদ্ধি।</li>
+            <li>R&D Tax Incentive: AI ও সাইবার নিরাপত্তায় অন্তর্ভুক্তির দাবি।</li>
+            <li>Digital Embassy: Tech Council-এর প্রস্তাব, AI হাব গঠনের পরিকল্পনা।</li>
+            <li>Smart Water: AI দ্বারা খরা ও বন্যা পূর্বাভাস ও ব্যবস্থাপনা।</li>
+          </ul>
+        </article>
+
+        <article class="article card" id="au8-6">
+          <h3>৮.৬: প্রযুক্তি ও সমাজ</h3>
+          <p>
+            প্রযুক্তি Australia-র সমাজে শিক্ষা, কর্মসংস্থান, স্বাস্থ্য ও পরিবেশে পরিবর্তন এনেছে। ২০৩০ সালের মধ্যে দেশটি
+            শীর্ষ
+            ডিজিটাল সমাজ হওয়ার লক্ষ্য নিয়েছে। Ethical AI, Net Zero ও ডিজিটাল অন্তর্ভুক্তিতে গবেষণা হচ্ছে।
+          </p>
+          <ul>
+            <li>Digital Economy Vision: ২০৩০ সালের মধ্যে শীর্ষ ১০ ডিজিটাল সমাজ।</li>
+            <li>শিক্ষা: AI ও কোডিং স্কুলে অন্তর্ভুক্ত, কর্মসংস্থানে দক্ষতা বৃদ্ধি।</li>
+            <li>Net Zero Transition: প্রযুক্তি দ্বারা পরিবেশ অভিযোজন ও পুনরুদ্ধার।</li>
+            <li>Ethical AI: Macquarie ও Monash গবেষণা, মানবিক ভবিষ্যতের উপর জোর।</li>
+          </ul>
+        </article>
+      </section>
+      <section class="chapter" id="politics">
+        <h2>🗺️ অধ্যায় ৯: রাজনীতি</h2>
+
+        <article class="article card" id="au9-1">
+          <h3>৯.১: রাজনৈতিক ইতিহাস</h3>
+          <p>
+            Australia-র রাজনৈতিক ইতিহাস শুরু হয় ১৯০১ সালে ফেডারেশন গঠনের মাধ্যমে। Westminster পদ্ধতির সংসদীয় গণতন্ত্র,
+            Indigenous অধিকার আন্দোলন, White Australia Policy ও Whitlam-এর বরখাস্ত—সবই ইতিহাসের অংশ।
+          </p>
+          <ul>
+            <li>১৯০১: Commonwealth of Australia গঠিত, ফেডারেশন শুরু।</li>
+            <li>১৯৬৭: Indigenous গণভোটে নাগরিক অধিকার স্বীকৃতি।</li>
+            <li>১৯৭৫: Whitlam সরকার বরখাস্ত, সাংবিধানিক বিতর্কের সূচনা।</li>
+            <li>বর্তমান: বহুজাতিক, উদার গণতন্ত্র, রাজতন্ত্র ও সংসদীয় কাঠামোর সমন্বয়।</li>
+          </ul>
+        </article>
+
+        <article class="article card" id="au9-2">
+          <h3>৯.২: প্রধান রাজনৈতিক দল</h3>
+          <p>
+            Australia-তে দুটি প্রধান দল রয়েছে: Australian Labor Party (ALP) ও Liberal Party of Australia। এছাড়া রয়েছে
+            Greens,
+            Nationals ও বিভিন্ন ছোট দল ও স্বাধীন প্রার্থী।
+          </p>
+          <ul>
+            <li>Australian Labor Party (ALP): মধ্য-বামপন্থী, শ্রমিক ও সামাজিক নীতিতে জোর।</li>
+            <li>Liberal Party: মধ্য-ডানপন্থী, বাজার অর্থনীতি ও ব্যক্তিগত স্বাধীনতায় বিশ্বাসী।</li>
+            <li>Greens: পরিবেশ, মানবাধিকার ও আদিবাসী ন্যায়ের পক্ষে।</li>
+            <li>Nationals: গ্রামীণ ও কৃষিভিত্তিক প্রতিনিধিত্ব।</li>
+          </ul>
+        </article>
+
+        <article class="article card" id="au9-3">
+          <h3>৯.৩: রাজনৈতিক আন্দোলন</h3>
+          <p>
+            Australia-তে Indigenous অধিকার, পরিবেশ, অভিবাসন ও গণতন্ত্র রক্ষায় আন্দোলন হয়েছে। ২০২৫ সালে “March for
+            Australia”
+            আন্দোলনে অভিবাসন ও জাতীয় পরিচয় নিয়ে বিতর্ক দেখা দেয়।
+          </p>
+          <ul>
+            <li>Indigenous Rights Movement: ১৯৬৭, Mabo, Voice to Parliament ইস্যু।</li>
+            <li>Environmental Movement: Climate Strike, anti-coal আন্দোলন।</li>
+            <li>March for Australia (২০২৫): অভিবাসন ও জাতীয় পরিচয় নিয়ে বিতর্কিত প্রতিবাদ।</li>
+            <li>Democracy Movement: Whitlam বরখাস্ত, ভোটাধিকার, গণতন্ত্র রক্ষা।</li>
+          </ul>
+        </article>
+
+        <article class="article card" id="au9-4">
+          <h3>৯.৪: রাজনৈতিক সংস্কৃতি ও চ্যালেঞ্জ</h3>
+          <p>
+            Australia-র রাজনৈতিক সংস্কৃতি গণতান্ত্রিক, অংশগ্রহণমূলক ও দলভিত্তিক। তবে চ্যালেঞ্জ রয়েছে রাজনৈতিক অর্থায়ন,
+            তথ্য
+            স্বচ্ছতা, আদিবাসী অন্তর্ভুক্তি ও চরমপন্থার উত্থান নিয়ে।
+          </p>
+          <ul>
+            <li>সংস্কৃতি: Westminster পদ্ধতি, দলীয় আনুগত্য, স্বাধীন মিডিয়া।</li>
+            <li>চ্যালেঞ্জ: রাজনৈতিক অর্থায়ন, misinformation, আদিবাসী অন্তর্ভুক্তি।</li>
+            <li>Strengthening Democracy Taskforce (২০২৩): গণতন্ত্র রক্ষায় কৌশল।</li>
+            <li>Grattan Institute (২০২৫): ৫টি প্রধান নীতিগত চ্যালেঞ্জ চিহ্নিত।</li>
+          </ul>
+        </article>
+
+        <article class="article card" id="au9-5">
+          <h3>৯.৫: নির্বাচন ব্যবস্থা</h3>
+          <p>
+            Australia-তে বাধ্যতামূলক ভোট, গোপন ব্যালট ও অনুপাতিক প্রতিনিধিত্ব ব্যবস্থায় নির্বাচন হয়। নিম্নকক্ষে
+            Instant-runoff
+            ও উচ্চকক্ষে Single Transferable Vote ব্যবহৃত হয়।
+          </p>
+          <ul>
+            <li>ভোটাধিকার: ১৮+ নাগরিক, বাধ্যতামূলক ভোট।</li>
+            <li>নিম্নকক্ষ (House of Representatives): Instant-runoff voting।</li>
+            <li>উচ্চকক্ষ (Senate): Proportional representation, STV পদ্ধতি।</li>
+            <li>নির্বাচন আইন: Commonwealth Electoral Act 1918 দ্বারা পরিচালিত।</li>
+          </ul>
+        </article>
+
+        <article class="article card" id="au9-6">
+          <h3>৯.৬: প্রশাসনিক কাঠামো</h3>
+          <p>
+            Australia একটি ফেডারেশন, যার মধ্যে রয়েছে ৬টি রাজ্য ও ২টি স্বায়ত্তশাসিত অঞ্চল। সরকার তিনটি স্তরে বিভক্ত:
+            ফেডারেল,
+            রাজ্য/অঞ্চল ও স্থানীয়। প্রধানমন্ত্রী নির্বাহী প্রধান, রাষ্ট্রপ্রধান রাজা Charles III।
+          </p>
+          <ul>
+            <li>ফেডারেশন: ৬ রাজ্য (NSW, Victoria, Queensland, WA, SA, Tasmania) ও ২ অঞ্চল (ACT, NT)।</li>
+            <li>সরকার স্তর: ফেডারেল, রাজ্য/অঞ্চল, স্থানীয়।</li>
+            <li>প্রধানমন্ত্রী: Anthony Albanese (২০২৫)।</li>
+            <li>রাষ্ট্রপ্রধান: King Charles III, স্থানীয়ভাবে Governor-General দ্বারা প্রতিনিধিত্ব।</li>
+          </ul>
+        </article>
+      </section>
+      <section class="chapter" id="law">
+        <h2>⚖️ অধ্যায় ১০: আইন ও বিচারব্যবস্থা</h2>
+
+        <article class="article card" id="au10-1">
+          <h3>১০.১: আইন ব্যবস্থার ইতিহাস</h3>
+          <p>
+            Australia-র আইন ব্যবস্থা ইংরেজি common law থেকে উদ্ভূত, যা ঔপনিবেশিক যুগে Indigenous customary law-এর উপর
+            প্রাধান্য পায়। ১৯০১ সালে ফেডারেশন গঠনের পর Australia নিজস্ব সংবিধান ও আইন কাঠামো গড়ে তোলে।
+          </p>
+          <ul>
+            <li>১৭৮৮: ইংরেজি common law প্রবর্তিত, Indigenous আইন উপেক্ষিত।</li>
+            <li>১৯০১: Commonwealth Constitution কার্যকর, ফেডারেল আইন কাঠামো গঠিত।</li>
+            <li>১৯৬০+: Australian legal history-তে Indigenous আইন ও অধিকার পুনর্বিবেচনা শুরু।</li>
+          </ul>
+        </article>
+
+        <article class="article card" id="au10-2">
+          <h3>১০.২: বিচারব্যবস্থার কাঠামো</h3>
+          <p>
+            Australia-র বিচারব্যবস্থা ফেডারেল ও রাজ্যভিত্তিক আদালত নিয়ে গঠিত। High Court সর্বোচ্চ আদালত, যার অধীনে রয়েছে
+            Federal Court, Family Court, এবং রাজ্য Supreme ও Magistrates Courts।
+          </p>
+          <ul>
+            <li>High Court of Australia: সাংবিধানিক ও আপিল বিচার, সর্বোচ্চ আদালত।</li>
+            <li>Federal Court: বাণিজ্য, কর, পরিবেশ ও প্রশাসনিক আইন।</li>
+            <li>Family Court: বিবাহ, সন্তান ও পারিবারিক বিরোধ নিষ্পত্তি।</li>
+            <li>State Courts: Supreme, District/County, Magistrates Courts—প্রতিটি রাজ্যে পৃথক।</li>
+          </ul>
+        </article>
+
+        <article class="article card" id="au10-3">
+          <h3>১০.৩: সংবিধান ও মৌলিক অধিকার</h3>
+          <p>
+            Australia-র সংবিধানে পাঁচটি মৌলিক অধিকার স্পষ্টভাবে উল্লেখ রয়েছে, যেমন ধর্মের স্বাধীনতা ও বিচার ব্যবস্থার
+            অধিকার।
+            এছাড়া মানবাধিকার সংরক্ষিত হয় সাধারণ আইন, সংসদীয় আইন ও আন্তর্জাতিক চুক্তির মাধ্যমে।
+          </p>
+          <ul>
+            <li>সংবিধানিক অধিকার: ভোটাধিকার (Sec 41), ধর্ম স্বাধীনতা (Sec 116), বিচার (Sec 80)।</li>
+            <li>আইনগত উৎস: সংবিধান, statute law, common law, আন্তর্জাতিক চুক্তি।</li>
+            <li>মানবাধিকার সংস্থা: Australian Human Rights Commission।</li>
+          </ul>
+        </article>
+
+        <article class="article card" id="au10-4">
+          <h3>১০.৪: আইন সংস্কার ও চ্যালেঞ্জ</h3>
+          <p>
+            Australia-তে আইন সংস্কার চলমান, বিশেষত AI, Indigenous ন্যায়বিচার, আদালতের বৈচিত্র্য ও তথ্য স্বচ্ছতা নিয়ে।
+            ২০২৫
+            সালে Australian Law Reform Commission (ALRC) AI ও আইনের ভবিষ্যৎ নিয়ে আলোচনা করে।
+          </p>
+          <ul>
+            <li>AI ও আইন: ALRC ২০২৫ সালে AI-র প্রভাব ও নৈতিকতা নিয়ে আলোচনা করে।</li>
+            <li>আদিবাসী ন্যায়বিচার: Mabo, Voice to Parliament, Land Rights আইন সংস্কার।</li>
+            <li>আদালত বৈচিত্র্য: Springer গবেষণায় আদালতের কাঠামো ও সংস্কার চিহ্নিত।</li>
+            <li>Law Council Call to Parties (২০২৫): নির্বাচনী নীতিতে আইন সংস্কার অগ্রাধিকার।</li>
+          </ul>
+        </article>
+      </section>
+      <section class="chapter" id="military">
+        <h2>🪖 অধ্যায় ১১: সামরিক</h2>
+
+        <article class="article card" id="au11-1">
+          <h3>১১.১: সামরিক ইতিহাস</h3>
+          <p>
+            Australia-র সামরিক ইতিহাস শুরু হয় ১৭৮৮ সালের ঔপনিবেশিক সীমান্ত যুদ্ধ থেকে। দেশটি Boer War, WWI, WWII,
+            Vietnam,
+            Iraq ও Afghanistan-এ অংশ নেয়। Anzac spirit জাতীয় পরিচয়ের অংশ হয়ে উঠেছে।
+          </p>
+          <ul>
+            <li>১৮৮৫: Sudan অভিযানে প্রথম আন্তর্জাতিক অংশগ্রহণ।</li>
+            <li>১৯১৪–১৮: WWI-তে Gallipoli ও Western Front-এ অংশগ্রহণ।</li>
+            <li>১৯৩৯–৪৫: WWII-তে Pacific ও European theatre-এ সক্রিয় ভূমিকা।</li>
+            <li>২০০১+: Afghanistan ও Iraq-এ শান্তিরক্ষা ও যুদ্ধ মিশন।</li>
+          </ul>
+        </article>
+
+        <article class="article card" id="au11-2">
+          <h3>১১.২: সামরিক বাহিনী ও সংগঠন</h3>
+          <p>
+            Australian Defence Force (ADF) তিনটি শাখায় বিভক্ত: Army, Navy ও Air Force। ২০২৪ সালে সক্রিয় সদস্য সংখ্যা ছিল
+            ৫৭,২২৬ এবং বাজেট ছিল $৫৫.৭ বিলিয়ন AUD, যা GDP-এর ২.০২%।
+          </p>
+          <ul>
+            <li>Army: স্থল বাহিনী, ১৯০১ সালে প্রতিষ্ঠিত।</li>
+            <li>Navy: সমুদ্র প্রতিরক্ষা, ১৪,০০০+ সদস্য।</li>
+            <li>Air Force: আকাশ প্রতিরক্ষা ও পরিবহন, ১৮+ বেস।</li>
+            <li>বাজেট (২০২৪–২৫): $৫৫.৭B AUD, বিশ্বে ১৩তম।</li>
+          </ul>
+        </article>
+
+        <article class="article card" id="au11-3">
+          <h3>১১.৩: সামরিক কৌশল ও প্রযুক্তি</h3>
+          <p>
+            ২০২৪ সালে Australia “Accelerating Asymmetric Advantage” শিরোনামে ১০-বছরের Defence Innovation Strategy চালু
+            করে।
+            এতে AI, autonomous systems, cyber ও space প্রযুক্তিতে বিনিয়োগ বাড়ানো হয়।
+          </p>
+          <ul>
+            <li>IS&T Strategy (২০২৪): উদ্ভাবন, বিজ্ঞান ও প্রযুক্তির সমন্বয়।</li>
+            <li>AI Integration: যুদ্ধ কৌশল, পূর্বাভাস ও সাইবার নিরাপত্তায় ব্যবহৃত।</li>
+            <li>Space & Cyber: নতুন প্রতিরক্ষা ক্ষেত্র হিসেবে চিহ্নিত।</li>
+            <li>Scramjet, hypersonics ও drone প্রযুক্তিতে গবেষণা।</li>
+          </ul>
+        </article>
+
+        <article class="article card" id="au11-4">
+          <h3>১১.৪: সামরিক প্রশিক্ষণ ও শিক্ষা</h3>
+          <p>
+            Australian Defence Force Academy (ADFA) Canberra-তে অবস্থিত, যা UNSW-এর সঙ্গে যৌথভাবে পরিচালিত। এখানে
+            নেতৃত্ব,
+            প্রযুক্তি ও সামরিক কৌশল শেখানো হয়। প্রশিক্ষণ প্রোগ্রামে রয়েছে তত্ত্ব, অনুশীলন ও আন্তর্জাতিক আদান-প্রদান।
+          </p>
+          <ul>
+            <li>ADFA: ১৯৮৬ সালে প্রতিষ্ঠিত, Navy, Army ও Air Force-এর জন্য।</li>
+            <li>অধিকাংশ ছাত্র: স্নাতক ও স্নাতকোত্তর পর্যায়ে শিক্ষা গ্রহণ করে।</li>
+            <li>প্রশিক্ষণ: নেতৃত্ব, কৌশল, প্রযুক্তি ও নৈতিকতা।</li>
+            <li>অধিকাংশ ব্যয়: ADF দ্বারা বহন, HELP-debt মুক্ত স্নাতক।</li>
+          </ul>
+        </article>
+
+        <article class="article card" id="au11-5">
+          <h3>১১.৫: সামরিক অবদান ও শান্তিরক্ষা মিশন</h3>
+          <p>
+            Australia ১৯৪৭ সাল থেকে UN ও বহুপাক্ষিক শান্তিরক্ষা মিশনে অংশ নিচ্ছে। দেশটি Cambodia, Bougainville, East
+            Timor,
+            Iraq ও Afghanistan-এ শান্তিরক্ষা ও পুনর্গঠন মিশনে নেতৃত্ব দিয়েছে।
+          </p>
+          <ul>
+            <li>UNTAC (Cambodia): ১৯৯২–৯৩, নেতৃত্বাধীন অংশগ্রহণ।</li>
+            <li>Bougainville: Peace Monitoring Group, ১৯৯৮–২০০৩।</li>
+            <li>East Timor: INTERFET, ১৯৯৯–২০০০, Australia নেতৃত্বে।</li>
+            <li>UN Missions: Kashmir, Sudan, Solomon Islands, Iraq।</li>
+          </ul>
+        </article>
+
+        <article class="article card" id="au11-6">
+          <h3>১১.৬: সামরিক ও সমাজ</h3>
+          <p>
+            Australia-তে সামরিক বাহিনী জাতীয় পরিচয়, প্রযুক্তি উন্নয়ন ও দুর্যোগ ব্যবস্থায় গুরুত্বপূর্ণ ভূমিকা রাখে। ২০২৫
+            সালে
+            Chief of Army Symposium-এ “Army in Society” থিমে জাতীয় সংলাপ অনুষ্ঠিত হয়।
+          </p>
+          <ul>
+            <li>ANZAC Spirit: Gallipoli যুদ্ধের স্মৃতি, জাতীয় ঐক্যের প্রতীক।</li>
+            <li>Army in Society (২০২৫): Canberra-তে জাতীয় সংলাপ।</li>
+            <li>দুর্যোগ সহায়তা: বন্যা, দাবানল ও COVID-১৯ মোকাবিলায় ADF সক্রিয়।</li>
+            <li>প্রযুক্তি: সামরিক উদ্ভাবন সমাজে ছড়িয়ে পড়ছে—Wi-Fi, Cochlear Implant।</li>
+          </ul>
+        </article>
+      </section>
+      <section class="chapter" id="relations">
+        <h2>🌍 অধ্যায় ১২: আন্তর্জাতিক সম্পর্ক</h2>
+
+        <article class="article card" id="au12-1">
+          <h3>১২.১: কূটনৈতিক ইতিহাস</h3>
+          <p>
+            Australia-র কূটনৈতিক ইতিহাস শুরু হয় ১৯০১ সালে ফেডারেশন গঠনের পর। প্রথমে ব্রিটিশ Commonwealth-এর অংশ হিসেবে,
+            পরে
+            ANZUS ও UN-এর সদস্য হয়ে দেশটি বৈশ্বিক কূটনীতিতে সক্রিয় হয়। ২১শ শতকে চীন, যুক্তরাষ্ট্র ও ভারতসহ
+            এশিয়া-প্রশান্ত
+            মহাসাগরীয় অঞ্চলে সম্পর্ক জোরদার হয়।
+          </p>
+          <ul>
+            <li>১৯০১: ফেডারেশন গঠন, স্বাধীন পররাষ্ট্রনীতি শুরু।</li>
+            <li>১৯৪৫: জাতিসংঘে সদস্যপদ লাভ।</li>
+            <li>১৯৫১: ANZUS চুক্তি—যুক্তরাষ্ট্র ও নিউজিল্যান্ডের সঙ্গে নিরাপত্তা জোট।</li>
+            <li>২০০০+: Indo-Pacific কৌশল, চীন ও ভারতের সঙ্গে সম্পর্ক জোরদার।</li>
+          </ul>
+        </article>
+
+        <article class="article card" id="au12-2">
+          <h3>১২.২: দ্বিপাক্ষিক সম্পর্ক</h3>
+          <p>
+            ২০২৫ সালে Australia চীন, যুক্তরাষ্ট্র, ভারত, Bangladesh, Kenya ও Fiji-র সঙ্গে দ্বিপাক্ষিক সম্পর্ক জোরদার
+            করেছে।
+            চীন ও যুক্তরাষ্ট্রের সঙ্গে খনিজ ও নিরাপত্তা চুক্তি, ভারতের সঙ্গে প্রযুক্তি ও শিক্ষা, Bangladesh-এর সঙ্গে
+            উন্নয়ন
+            সহযোগিতা চালু হয়েছে।
+          </p>
+          <ul>
+            <li>চীন: Albanese-এর সফরে সম্পর্ক পুনঃস্থাপন, খনিজ ও বাণিজ্য চুক্তি।</li>
+            <li>যুক্তরাষ্ট্র: Critical Minerals Agreement, নিরাপত্তা ও প্রযুক্তি সহযোগিতা।</li>
+            <li>ভারত: শিক্ষা, প্রযুক্তি ও AI সহযোগিতা।</li>
+            <li>Bangladesh: ২০২৫–৩০ উন্নয়ন পরিকল্পনা, জলবায়ু ও মানব উন্নয়ন।</li>
+            <li>Kenya: কৃষি, খনিজ, পরিবেশ ও শ্রম অভিবাসনে সহযোগিতা।</li>
+          </ul>
+        </article>
+
+        <article class="article card" id="au12-3">
+          <h3>১২.৩: বহুপাক্ষিক সংস্থা ও চুক্তি</h3>
+          <p>
+            Australia জাতিসংঘ, WTO, AUKUS, CPTPP, Quad ও Indo-Pacific Economic Framework-এর সদস্য। দেশটি ২০০+ বহুপাক্ষিক
+            চুক্তিতে অংশগ্রহণ করে, যার মধ্যে রয়েছে Paris Agreement, Nuclear Non-Proliferation Treaty ও Human Rights
+            Convention।
+          </p>
+          <ul>
+            <li>UN, WTO, WHO, ILO, UNESCO—প্রধান সদস্যপদ।</li>
+            <li>AUKUS: যুক্তরাষ্ট্র ও যুক্তরাজ্যের সঙ্গে নিরাপত্তা জোট।</li>
+            <li>CPTPP: Indo-Pacific মুক্ত বাণিজ্য চুক্তি।</li>
+            <li>Paris Agreement: জলবায়ু পরিবর্তন মোকাবিলায় প্রতিশ্রুতি।</li>
+            <li>Australian Treaties Database: ২০০+ বহুপাক্ষিক চুক্তি তালিকাভুক্ত।</li>
+          </ul>
+        </article>
+
+        <article class="article card" id="au12-4">
+          <h3>১২.৪: পররাষ্ট্রনীতি ও কৌশল</h3>
+          <p>
+            ২০২৫ সালে Australia “Australia in the World” কৌশল চালু করে, যেখানে নিরাপত্তা, বৈচিত্র্যপূর্ণ সম্পর্ক ও
+            আন্তর্জাতিক
+            নিয়ম রক্ষায় জোর দেওয়া হয়। DFAT ও Lowy Institute নতুন White Paper প্রস্তাব করে।
+          </p>
+          <ul>
+            <li>Australia in the World: ২০২৫ Snapshot—নিরাপত্তা, সম্পর্ক ও নিয়মভিত্তিক বিশ্ব।</li>
+            <li>DFAT: পররাষ্ট্রনীতি বাস্তবায়নকারী সংস্থা।</li>
+            <li>Lowy Institute: নতুন White Paper প্রস্তাব, বৈশ্বিক পরিবর্তনের প্রতিক্রিয়া।</li>
+            <li>Geoeconomics: পররাষ্ট্রনীতিতে অর্থনৈতিক কৌশলের গুরুত্ব বৃদ্ধি।</li>
+          </ul>
+        </article>
+
+        <article class="article card" id="au12-5">
+          <h3>১২.৫: আন্তর্জাতিক চ্যালেঞ্জে</h3>
+          <p>
+            ২০২৫ সালে Australia-র আন্তর্জাতিক চ্যালেঞ্জের মধ্যে রয়েছে চীন-যুক্তরাষ্ট্র প্রতিযোগিতা, জলবায়ু পরিবর্তন,
+            বাণিজ্য
+            বাধা, আঞ্চলিক অস্থিরতা ও প্রযুক্তি নিরাপত্তা। CSIS ও ASPI এসব চ্যালেঞ্জ মোকাবিলায় কৌশল প্রস্তাব করেছে।
+          </p>
+          <ul>
+            <li>চীন-যুক্তরাষ্ট্র প্রতিযোগিতা: কূটনৈতিক ভারসাম্য রক্ষা।</li>
+            <li>জলবায়ু পরিবর্তন: Paris Agreement বাস্তবায়ন ও প্রশান্ত মহাসাগরীয় দ্বীপপুঞ্জে সহায়তা।</li>
+            <li>বাণিজ্য বাধা: চীনের রপ্তানি নিয়ন্ত্রণ ও যুক্তরাষ্ট্রের শুল্ক নীতি।</li>
+            <li>প্রযুক্তি নিরাপত্তা: AUKUS ও AI কৌশল।</li>
+            <li>ASPI Agenda ২০২৫: প্রস্তুতি ও স্থিতিশীলতা বৃদ্ধির সুপারিশ।</li>
+          </ul>
+        </article>
+      </section>
+      <!-- ✅ Footer -->
+      <footer id="dynamicFooter"></footer>
+    </div>
+    <aside class="chapter-nav-sidebar" id="chapterNavSidebar">
+      <h3>অধ্যায়</h3>
+      <ul class="chapter-nav-sidebar-ul" id="chapterNavList"></ul>
+    </aside>
+  </div>
+  <!-- 🪟 Popup Modal -->
+  <div id="popupSection" class="popup hidden">
+    <div class="popup-content">
+      <span class="close-btn" id="closePopup">&times;</span>
+      <h2 id="popupTitle"></h2>
+      <p id="popupContent"></p>
+    </div>
+  </div>
+
+  <script src="assets/js/topbar.js"></script>
+  <script src="assets/js/searchBar.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0"></script>
+  <script src="assets/js/translate.js"></script>
+  <script src="assets/js/sidebar.js"></script>
+  <script src="assets/js/body.js"></script>
+  <script src="assets/js/viewCount.js"></script>
+  <script src="assets/js/rating.js"></script>
+
+</body>
+
+</html>
